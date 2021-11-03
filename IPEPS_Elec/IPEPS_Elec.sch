@@ -56,26 +56,6 @@ Wire Wire Line
 	945  1370 945  1420
 Connection ~ 945  1370
 $Comp
-L IPEPS_Elec:SN74HC11N U?
-U 1 1 618658CA
-P 4160 3730
-F 0 "U?" H 3985 4680 60  0000 C CNN
-F 1 "SN74HC11N" H 4510 2755 60  0000 C CNN
-F 2 "digikey-footprints:DIP-14_W3mm" H 4570 4500 60  0001 L CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74hc11.pdf?ts=1635939023654&ref_url=https%253A%252F%252Fwww.ti.com%252Fstore%252Fti%252Fen%252Fp%252Fproduct%252F%253Fp%253DSN74HC11N%2526keyMatch%253DSN74HC11N" H 4570 4600 60  0001 L CNN
-F 4 "" H 4580 4680 60  0001 L CNN "Digi-Key_PN"
-F 5 "SN74HC11N" H 4580 4780 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 4580 4880 60  0001 L CNN "Category"
-F 7 "Logic - Gates and Inverters" H 4580 4980 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hc00" H 4590 5080 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/SN74HC00N/296-1563-5-ND/277209" H 4570 5200 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC GATE NAND 4CH 2-INP 14DIP" H 4570 5300 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 4570 5400 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 4570 5500 60  0001 L CNN "Status"
-	1    4160 3730
-	1    0    0    -1  
-$EndComp
-$Comp
 L Switch:SW_Push SW?
 U 1 1 6188E335
 P 1550 3350
@@ -169,17 +149,6 @@ F 3 "" H 4115 765 50  0001 C CNN
 $EndComp
 $Comp
 L power:VCC #PWR?
-U 1 1 6189AAAC
-P 4160 2630
-F 0 "#PWR?" H 4160 2480 50  0001 C CNN
-F 1 "VCC" H 4175 2803 50  0000 C CNN
-F 2 "" H 4160 2630 50  0001 C CNN
-F 3 "" H 4160 2630 50  0001 C CNN
-	1    4160 2630
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR?
 U 1 1 6189B1F2
 P 7740 1075
 F 0 "#PWR?" H 7740 925 50  0001 C CNN
@@ -189,8 +158,6 @@ F 3 "" H 7740 1075 50  0001 C CNN
 	1    7740 1075
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4160 2630 4160 2730
 Wire Wire Line
 	7740 1075 7740 1200
 $Comp
@@ -267,26 +234,6 @@ F 3 "~" H 3765 940 50  0001 C CNN
 	1    3765 940 
 	1    0    0    -1  
 $EndComp
-$Comp
-L dk_Logic-Gates-and-Inverters:SN74HC14N U?
-U 1 1 6186B77E
-P 4115 1565
-F 0 "U?" H 3940 2140 60  0000 C CNN
-F 1 "SN74HC14N" H 4440 1090 60  0000 C CNN
-F 2 "digikey-footprints:DIP-14_W3mm" H 4315 1765 60  0001 L CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hc14" H 4315 1865 60  0001 L CNN
-F 4 "296-1577-5-ND" H 4315 1965 60  0001 L CNN "Digi-Key_PN"
-F 5 "SN74HC14N" H 4315 2065 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 4315 2165 60  0001 L CNN "Category"
-F 7 "Logic - Gates and Inverters" H 4315 2265 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hc14" H 4315 2365 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/SN74HC14N/296-1577-5-ND/277223" H 4315 2465 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC INVERTER SCHMITT 6CH 14DIP" H 4315 2565 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 4315 2665 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 4315 2765 60  0001 L CNN "Status"
-	1    4115 1565
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3765 840  4115 840 
 Wire Wire Line
@@ -294,31 +241,6 @@ Wire Wire Line
 Wire Wire Line
 	4115 840  4115 765 
 Connection ~ 4115 840 
-$Comp
-L power:GND #PWR?
-U 1 1 618B423C
-P 3810 2830
-F 0 "#PWR?" H 3810 2580 50  0001 C CNN
-F 1 "GND" H 3815 2657 50  0001 C CNN
-F 2 "" H 3810 2830 50  0001 C CNN
-F 3 "" H 3810 2830 50  0001 C CNN
-	1    3810 2830
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 618B44E2
-P 3810 2730
-F 0 "C?" H 3685 2830 50  0000 L CNN
-F 1 "10uF" H 3585 2655 50  0000 L CNN
-F 2 "" H 3810 2730 50  0001 C CNN
-F 3 "~" H 3810 2730 50  0001 C CNN
-	1    3810 2730
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3810 2630 4160 2630
-Connection ~ 4160 2630
 $Comp
 L power:GND #PWR?
 U 1 1 618B6721
@@ -511,7 +433,7 @@ L Device:R_Small R?
 U 1 1 619A0338
 P 9315 3795
 F 0 "R?" V 9119 3795 50  0000 C CNN
-F 1 "220R" V 9210 3795 50  0000 C CNN
+F 1 "100R" V 9210 3795 50  0000 C CNN
 F 2 "" H 9315 3795 50  0001 C CNN
 F 3 "~" H 9315 3795 50  0001 C CNN
 	1    9315 3795
@@ -522,7 +444,7 @@ L Device:R_Small R?
 U 1 1 619A7E2C
 P 8915 4450
 F 0 "R?" V 8719 4450 50  0000 C CNN
-F 1 "47k" V 8810 4450 50  0000 C CNN
+F 1 "22k" V 8810 4450 50  0000 C CNN
 F 2 "" H 8915 4450 50  0001 C CNN
 F 3 "~" H 8915 4450 50  0001 C CNN
 	1    8915 4450
@@ -610,7 +532,7 @@ L Device:R_Small R?
 U 1 1 61878320
 P 10745 3820
 F 0 "R?" V 10549 3820 50  0000 C CNN
-F 1 "220R" V 10640 3820 50  0000 C CNN
+F 1 "100R" V 10640 3820 50  0000 C CNN
 F 2 "" H 10745 3820 50  0001 C CNN
 F 3 "~" H 10745 3820 50  0001 C CNN
 	1    10745 3820
@@ -621,7 +543,7 @@ L Device:R_Small R?
 U 1 1 6187878E
 P 10345 4475
 F 0 "R?" V 10149 4475 50  0000 C CNN
-F 1 "47k" V 10240 4475 50  0000 C CNN
+F 1 "22k" V 10240 4475 50  0000 C CNN
 F 2 "" H 10345 4475 50  0001 C CNN
 F 3 "~" H 10345 4475 50  0001 C CNN
 	1    10345 4475
@@ -679,7 +601,7 @@ L Device:R_Small R?
 U 1 1 6187EC5E
 P 9300 5340
 F 0 "R?" V 9104 5340 50  0000 C CNN
-F 1 "220R" V 9195 5340 50  0000 C CNN
+F 1 "100R" V 9195 5340 50  0000 C CNN
 F 2 "" H 9300 5340 50  0001 C CNN
 F 3 "~" H 9300 5340 50  0001 C CNN
 	1    9300 5340
@@ -690,7 +612,7 @@ L Device:R_Small R?
 U 1 1 6187F148
 P 8900 5995
 F 0 "R?" V 8704 5995 50  0000 C CNN
-F 1 "47k" V 8795 5995 50  0000 C CNN
+F 1 "22k" V 8795 5995 50  0000 C CNN
 F 2 "" H 8900 5995 50  0001 C CNN
 F 3 "~" H 8900 5995 50  0001 C CNN
 	1    8900 5995
@@ -748,7 +670,7 @@ L Device:R_Small R?
 U 1 1 618864E1
 P 10750 5395
 F 0 "R?" V 10554 5395 50  0000 C CNN
-F 1 "220R" V 10645 5395 50  0000 C CNN
+F 1 "100R" V 10645 5395 50  0000 C CNN
 F 2 "" H 10750 5395 50  0001 C CNN
 F 3 "~" H 10750 5395 50  0001 C CNN
 	1    10750 5395
@@ -759,7 +681,7 @@ L Device:R_Small R?
 U 1 1 61886A47
 P 10350 6050
 F 0 "R?" V 10154 6050 50  0000 C CNN
-F 1 "47k" V 10245 6050 50  0000 C CNN
+F 1 "22k" V 10245 6050 50  0000 C CNN
 F 2 "" H 10350 6050 50  0001 C CNN
 F 3 "~" H 10350 6050 50  0001 C CNN
 	1    10350 6050
@@ -848,4 +770,82 @@ Wire Wire Line
 Connection ~ 7270 4235
 Wire Wire Line
 	7270 4235 7270 2100
+$Comp
+L dk_Logic-Gates-and-Inverters:SN74HC14N U?
+U 1 1 6186B77E
+P 4115 1565
+F 0 "U?" H 3940 2140 60  0000 C CNN
+F 1 "SN74HC14N" H 4440 1090 60  0000 C CNN
+F 2 "digikey-footprints:DIP-14_W3mm" H 4315 1765 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hc14" H 4315 1865 60  0001 L CNN
+F 4 "296-1577-5-ND" H 4315 1965 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74HC14N" H 4315 2065 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 4315 2165 60  0001 L CNN "Category"
+F 7 "Logic - Gates and Inverters" H 4315 2265 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hc14" H 4315 2365 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74HC14N/296-1577-5-ND/277223" H 4315 2465 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC INVERTER SCHMITT 6CH 14DIP" H 4315 2565 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 4315 2665 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4315 2765 60  0001 L CNN "Status"
+	1    4115 1565
+	1    0    0    -1  
+$EndComp
+Connection ~ 4160 2630
+Wire Wire Line
+	3810 2630 4160 2630
+$Comp
+L Device:C_Small C?
+U 1 1 618B44E2
+P 3810 2730
+F 0 "C?" H 3685 2830 50  0000 L CNN
+F 1 "10uF" H 3585 2655 50  0000 L CNN
+F 2 "" H 3810 2730 50  0001 C CNN
+F 3 "~" H 3810 2730 50  0001 C CNN
+	1    3810 2730
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618B423C
+P 3810 2830
+F 0 "#PWR?" H 3810 2580 50  0001 C CNN
+F 1 "GND" H 3815 2657 50  0001 C CNN
+F 2 "" H 3810 2830 50  0001 C CNN
+F 3 "" H 3810 2830 50  0001 C CNN
+	1    3810 2830
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4160 2630 4160 2730
+$Comp
+L power:VCC #PWR?
+U 1 1 6189AAAC
+P 4160 2630
+F 0 "#PWR?" H 4160 2480 50  0001 C CNN
+F 1 "VCC" H 4175 2803 50  0000 C CNN
+F 2 "" H 4160 2630 50  0001 C CNN
+F 3 "" H 4160 2630 50  0001 C CNN
+	1    4160 2630
+	1    0    0    -1  
+$EndComp
+$Comp
+L IPEPS_Elec:SN74HC11N U?
+U 1 1 618658CA
+P 4160 3730
+F 0 "U?" H 3985 4680 60  0000 C CNN
+F 1 "SN74HC11N" H 4510 2755 60  0000 C CNN
+F 2 "digikey-footprints:DIP-14_W3mm" H 4570 4500 60  0001 L CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74hc11.pdf?ts=1635939023654&ref_url=https%253A%252F%252Fwww.ti.com%252Fstore%252Fti%252Fen%252Fp%252Fproduct%252F%253Fp%253DSN74HC11N%2526keyMatch%253DSN74HC11N" H 4570 4600 60  0001 L CNN
+F 4 "" H 4580 4680 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74HC11N" H 4580 4780 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 4580 4880 60  0001 L CNN "Category"
+F 7 "Logic - Gates and Inverters" H 4580 4980 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hc00" H 4590 5080 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74HC00N/296-1563-5-ND/277209" H 4570 5200 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC GATE NAND 4CH 2-INP 14DIP" H 4570 5300 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 4570 5400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4570 5500 60  0001 L CNN "Status"
+	1    4160 3730
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
