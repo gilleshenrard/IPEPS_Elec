@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74HC86
+D Quad 2-input XOR
+K TTL XOR2
+F http://www.ti.com/lit/gpn/sn74HC86
+$ENDCMP
+#
+$CMP SN74HC11N
+D IC GATE AND 3CH 3-INP 14DIP
+K 296-1563-5-ND 74HC
+F https://www.ti.com/lit/ds/symlink/sn74hc11.pdf?ts=1635939023654&ref_url=https%253A%252F%252Fwww.ti.com%252Fstore%252Fti%252Fen%252Fp%252Fproduct%252F%253Fp%253DSN74HC11N%2526keyMatch%253DSN74HC11N
+$ENDCMP
+#
+$CMP SN74HC86N
+D Quad 2-input XOR
+K TTL XOR2
+F https://www.ti.com/lit/ds/symlink/sn74hc86.pdf?ts=1635939524941&ref_url=https%253A%252F%252Fwww.google.com%252F
+$ENDCMP
+#
+#End Doc Library

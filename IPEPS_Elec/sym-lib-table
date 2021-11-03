@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name dk_Battery-Holders-Clips-Contacts)(type Legacy)(uri D:/Downloads/digikey-kicad-library-master/digikey-symbols/dk_Battery-Holders-Clips-Contacts.lib)(options "")(descr ""))
+  (lib (name dk_Logic-Gates-and-Inverters)(type Legacy)(uri D:/Downloads/digikey-kicad-library-master/digikey-symbols/dk_Logic-Gates-and-Inverters.lib)(options "")(descr ""))
+  (lib (name IPEPS_Elec)(type Legacy)(uri ${KIPRJMOD}/IPEPS_Elec.lib)(options "")(descr ""))
+)

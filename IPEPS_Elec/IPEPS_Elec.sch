@@ -1,0 +1,712 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L dk_Battery-Holders-Clips-Contacts:BS-7 BAT?
+U 1 1 61827D44
+P 1075 1625
+F 0 "BAT?" H 725 1700 60  0000 L CNN
+F 1 "BS-7" H 700 1600 60  0000 L CNN
+F 2 "digikey-footprints:Battery_Holder_Coin_2032_BS-7" H 1275 1825 60  0001 L CNN
+F 3 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" V 1275 1925 60  0001 L CNN
+F 4 "BS-7-ND" H 1275 2025 60  0001 L CNN "Digi-Key_PN"
+F 5 "BS-7" H 1275 2125 60  0001 L CNN "MPN"
+F 6 "Battery Products" H 1275 2225 60  0001 L CNN "Category"
+F 7 "Battery Holders, Clips, Contacts" H 1275 2325 60  0001 L CNN "Family"
+F 8 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" H 1275 2425 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/mpd-memory-protection-devices/BS-7/BS-7-ND/389447" H 1275 2525 60  0001 L CNN "DK_Detail_Page"
+F 10 "BATTERY HOLDER COIN 20MM PC PIN" H 1275 2625 60  0001 L CNN "Description"
+F 11 "MPD (Memory Protection Devices)" H 1275 2725 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1275 2825 60  0001 L CNN "Status"
+	1    1075 1625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1375 1075 1375
+Wire Wire Line
+	1075 1375 1075 1425
+Wire Wire Line
+	1075 1825 1950 1825
+Wire Wire Line
+	1950 1825 1950 1675
+$Comp
+L power:GND #PWR?
+U 1 1 61830670
+P 1075 1875
+F 0 "#PWR?" H 1075 1625 50  0001 C CNN
+F 1 "GND" H 1080 1702 50  0000 C CNN
+F 2 "" H 1075 1875 50  0001 C CNN
+F 3 "" H 1075 1875 50  0001 C CNN
+	1    1075 1875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1075 1825 1075 1875
+Connection ~ 1075 1825
+$Comp
+L IPEPS_Elec:SN74HC11N U?
+U 1 1 618658CA
+P 4160 3730
+F 0 "U?" H 3985 4680 60  0000 C CNN
+F 1 "SN74HC11N" H 4510 2755 60  0000 C CNN
+F 2 "digikey-footprints:DIP-14_W3mm" H 4570 4500 60  0001 L CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74hc11.pdf?ts=1635939023654&ref_url=https%253A%252F%252Fwww.ti.com%252Fstore%252Fti%252Fen%252Fp%252Fproduct%252F%253Fp%253DSN74HC11N%2526keyMatch%253DSN74HC11N" H 4570 4600 60  0001 L CNN
+F 4 "" H 4580 4680 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74HC11N" H 4580 4780 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 4580 4880 60  0001 L CNN "Category"
+F 7 "Logic - Gates and Inverters" H 4580 4980 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hc00" H 4590 5080 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74HC00N/296-1563-5-ND/277209" H 4570 5200 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC GATE NAND 4CH 2-INP 14DIP" H 4570 5300 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 4570 5400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4570 5500 60  0001 L CNN "Status"
+	1    4160 3730
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 6188E335
+P 1550 3350
+F 0 "SW?" H 1550 3540 50  0000 C CNN
+F 1 "SW_C" H 1770 3445 50  0000 C CNN
+F 2 "" H 1550 3550 50  0001 C CNN
+F 3 "~" H 1550 3550 50  0001 C CNN
+	1    1550 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 6188F251
+P 1550 4075
+F 0 "SW?" H 1550 4270 50  0000 C CNN
+F 1 "SW_L" H 1775 4155 50  0000 C CNN
+F 2 "" H 1550 4275 50  0001 C CNN
+F 3 "~" H 1550 4275 50  0001 C CNN
+	1    1550 4075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 6188F720
+P 1550 3700
+F 0 "SW?" H 1550 3895 50  0000 C CNN
+F 1 "SW_T" H 1765 3775 50  0000 C CNN
+F 2 "" H 1550 3900 50  0001 C CNN
+F 3 "~" H 1550 3900 50  0001 C CNN
+	1    1550 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 6188FC75
+P 1550 4450
+F 0 "SW?" H 1550 4630 50  0000 C CNN
+F 1 "SW_J" H 1780 4525 50  0000 C CNN
+F 2 "" H 1550 4650 50  0001 C CNN
+F 3 "~" H 1550 4650 50  0001 C CNN
+	1    1550 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:AO3401A Q?
+U 1 1 61893D18
+P 1950 1475
+F 0 "Q?" V 2292 1475 50  0000 C CNN
+F 1 "AO3401A" V 2201 1475 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2150 1400 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 1950 1475 50  0001 L CNN
+	1    1950 1475
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 61896917
+P 2300 1300
+F 0 "#PWR?" H 2300 1150 50  0001 C CNN
+F 1 "VCC" H 2315 1473 50  0000 C CNN
+F 2 "" H 2300 1300 50  0001 C CNN
+F 3 "" H 2300 1300 50  0001 C CNN
+	1    2300 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 61897A06
+P 1250 3050
+F 0 "#PWR?" H 1250 2900 50  0001 C CNN
+F 1 "VCC" H 1265 3223 50  0000 C CNN
+F 2 "" H 1250 3050 50  0001 C CNN
+F 3 "" H 1250 3050 50  0001 C CNN
+	1    1250 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1375 2300 1375
+Wire Wire Line
+	2300 1375 2300 1300
+$Comp
+L power:VCC #PWR?
+U 1 1 618988A0
+P 4115 765
+F 0 "#PWR?" H 4115 615 50  0001 C CNN
+F 1 "VCC" H 4130 938 50  0000 C CNN
+F 2 "" H 4115 765 50  0001 C CNN
+F 3 "" H 4115 765 50  0001 C CNN
+	1    4115 765 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 6189AAAC
+P 4160 2630
+F 0 "#PWR?" H 4160 2480 50  0001 C CNN
+F 1 "VCC" H 4175 2803 50  0000 C CNN
+F 2 "" H 4160 2630 50  0001 C CNN
+F 3 "" H 4160 2630 50  0001 C CNN
+	1    4160 2630
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 6189B1F2
+P 7740 1075
+F 0 "#PWR?" H 7740 925 50  0001 C CNN
+F 1 "VCC" H 7755 1248 50  0000 C CNN
+F 2 "" H 7740 1075 50  0001 C CNN
+F 3 "" H 7740 1075 50  0001 C CNN
+	1    7740 1075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4160 2630 4160 2730
+Wire Wire Line
+	7740 1075 7740 1200
+$Comp
+L power:GND #PWR?
+U 1 1 6189C4D1
+P 4115 2065
+F 0 "#PWR?" H 4115 1815 50  0001 C CNN
+F 1 "GND" H 4120 1892 50  0000 C CNN
+F 2 "" H 4115 2065 50  0001 C CNN
+F 3 "" H 4115 2065 50  0001 C CNN
+	1    4115 2065
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6189D372
+P 4160 4730
+F 0 "#PWR?" H 4160 4480 50  0001 C CNN
+F 1 "GND" H 4165 4557 50  0000 C CNN
+F 2 "" H 4160 4730 50  0001 C CNN
+F 3 "" H 4160 4730 50  0001 C CNN
+	1    4160 4730
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6189DFB6
+P 7740 3200
+F 0 "#PWR?" H 7740 2950 50  0001 C CNN
+F 1 "GND" H 7745 3027 50  0000 C CNN
+F 2 "" H 7740 3200 50  0001 C CNN
+F 3 "" H 7740 3200 50  0001 C CNN
+	1    7740 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 3050 1250 3350
+Wire Wire Line
+	1250 3350 1350 3350
+Wire Wire Line
+	1250 3350 1250 3700
+Wire Wire Line
+	1250 3700 1350 3700
+Connection ~ 1250 3350
+Wire Wire Line
+	1250 3700 1250 4075
+Wire Wire Line
+	1250 4075 1350 4075
+Connection ~ 1250 3700
+Wire Wire Line
+	1250 4075 1250 4450
+Wire Wire Line
+	1250 4450 1350 4450
+Connection ~ 1250 4075
+$Comp
+L power:GND #PWR?
+U 1 1 618AE08D
+P 3765 1040
+F 0 "#PWR?" H 3765 790 50  0001 C CNN
+F 1 "GND" H 3770 867 50  0001 C CNN
+F 2 "" H 3765 1040 50  0001 C CNN
+F 3 "" H 3765 1040 50  0001 C CNN
+	1    3765 1040
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 618AA6E6
+P 3765 940
+F 0 "C?" H 3640 1040 50  0000 L CNN
+F 1 "10uF" H 3540 865 50  0000 L CNN
+F 2 "" H 3765 940 50  0001 C CNN
+F 3 "~" H 3765 940 50  0001 C CNN
+	1    3765 940 
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Logic-Gates-and-Inverters:SN74HC14N U?
+U 1 1 6186B77E
+P 4115 1565
+F 0 "U?" H 3940 2140 60  0000 C CNN
+F 1 "SN74HC14N" H 4440 1090 60  0000 C CNN
+F 2 "digikey-footprints:DIP-14_W3mm" H 4315 1765 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hc14" H 4315 1865 60  0001 L CNN
+F 4 "296-1577-5-ND" H 4315 1965 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74HC14N" H 4315 2065 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 4315 2165 60  0001 L CNN "Category"
+F 7 "Logic - Gates and Inverters" H 4315 2265 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hc14" H 4315 2365 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74HC14N/296-1577-5-ND/277223" H 4315 2465 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC INVERTER SCHMITT 6CH 14DIP" H 4315 2565 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 4315 2665 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4315 2765 60  0001 L CNN "Status"
+	1    4115 1565
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3765 840  4115 840 
+Wire Wire Line
+	4115 840  4115 965 
+Wire Wire Line
+	4115 840  4115 765 
+Connection ~ 4115 840 
+$Comp
+L power:GND #PWR?
+U 1 1 618B423C
+P 3810 2830
+F 0 "#PWR?" H 3810 2580 50  0001 C CNN
+F 1 "GND" H 3815 2657 50  0001 C CNN
+F 2 "" H 3810 2830 50  0001 C CNN
+F 3 "" H 3810 2830 50  0001 C CNN
+	1    3810 2830
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 618B44E2
+P 3810 2730
+F 0 "C?" H 3685 2830 50  0000 L CNN
+F 1 "10uF" H 3585 2655 50  0000 L CNN
+F 2 "" H 3810 2730 50  0001 C CNN
+F 3 "~" H 3810 2730 50  0001 C CNN
+	1    3810 2730
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3810 2630 4160 2630
+Connection ~ 4160 2630
+$Comp
+L power:GND #PWR?
+U 1 1 618B6721
+P 7390 1275
+F 0 "#PWR?" H 7390 1025 50  0001 C CNN
+F 1 "GND" H 7395 1102 50  0001 C CNN
+F 2 "" H 7390 1275 50  0001 C CNN
+F 3 "" H 7390 1275 50  0001 C CNN
+	1    7390 1275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 618B69E5
+P 7390 1175
+F 0 "C?" H 7265 1275 50  0000 L CNN
+F 1 "10uF" H 7165 1100 50  0000 L CNN
+F 2 "" H 7390 1175 50  0001 C CNN
+F 3 "~" H 7390 1175 50  0001 C CNN
+	1    7390 1175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7390 1075 7740 1075
+Connection ~ 7740 1075
+Wire Wire Line
+	1750 3350 2045 3350
+Wire Wire Line
+	2045 3350 2045 3070
+Wire Wire Line
+	2045 3070 2545 3070
+Wire Wire Line
+	1750 3700 2400 3700
+Wire Wire Line
+	2810 3700 2810 1265
+Wire Wire Line
+	2810 1265 3815 1265
+Wire Wire Line
+	4415 1265 4800 1265
+Wire Wire Line
+	4800 1265 4800 2335
+Wire Wire Line
+	4800 2335 3550 2335
+Wire Wire Line
+	3550 2335 3550 3170
+Wire Wire Line
+	3550 3170 3860 3170
+Wire Wire Line
+	2810 3700 3010 3700
+Wire Wire Line
+	3010 3700 3010 3630
+Wire Wire Line
+	3010 3630 3860 3630
+Connection ~ 2810 3700
+Wire Wire Line
+	2950 3070 2950 1365
+Wire Wire Line
+	2950 1365 3815 1365
+Connection ~ 2950 3070
+Wire Wire Line
+	2950 3070 3860 3070
+Wire Wire Line
+	4415 1365 4740 1365
+Wire Wire Line
+	4740 1365 4740 2290
+Wire Wire Line
+	4740 2290 3470 2290
+Wire Wire Line
+	3470 2290 3470 3730
+Wire Wire Line
+	3470 3730 3860 3730
+Wire Wire Line
+	1750 4450 3120 4450
+Wire Wire Line
+	3120 4450 3120 3830
+Wire Wire Line
+	3120 3270 3860 3270
+Wire Wire Line
+	3860 3830 3120 3830
+Connection ~ 3120 3830
+Wire Wire Line
+	3120 3830 3120 3270
+Wire Wire Line
+	2545 3070 2545 4200
+Wire Wire Line
+	2545 4200 3860 4200
+Connection ~ 2545 3070
+Wire Wire Line
+	2545 3070 2950 3070
+Wire Wire Line
+	2400 4300 3860 4300
+Wire Wire Line
+	2400 3700 2400 4300
+Connection ~ 2400 3700
+Wire Wire Line
+	2400 3700 2810 3700
+Wire Wire Line
+	4460 4300 4720 4300
+Wire Wire Line
+	4720 4300 4720 2395
+Wire Wire Line
+	4720 2395 3720 2395
+Wire Wire Line
+	3720 2395 3720 1465
+Wire Wire Line
+	3720 1465 3815 1465
+Wire Wire Line
+	4415 1465 6525 1465
+Wire Wire Line
+	6525 1465 6525 1540
+Wire Wire Line
+	6525 1540 7440 1540
+Wire Wire Line
+	1750 4075 2100 4075
+Wire Wire Line
+	2100 4075 2100 5110
+Wire Wire Line
+	2100 5110 6155 5110
+Wire Wire Line
+	6155 5110 6155 1640
+Wire Wire Line
+	6155 1640 7440 1640
+Wire Wire Line
+	3120 4450 3120 5010
+Wire Wire Line
+	3120 5010 6075 5010
+Wire Wire Line
+	6075 5010 6075 2265
+Wire Wire Line
+	6075 1740 7440 1740
+Connection ~ 3120 4450
+$Comp
+L IPEPS_Elec:SN74HC11N U?
+U 1 1 61862415
+P 7740 2200
+F 0 "U?" H 7590 3175 60  0000 C CNN
+F 1 "SN74HC11N" H 8090 1225 60  0000 C CNN
+F 2 "digikey-footprints:DIP-14_W3mm" H 8150 2970 60  0001 L CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74hc11.pdf?ts=1635939023654&ref_url=https%253A%252F%252Fwww.ti.com%252Fstore%252Fti%252Fen%252Fp%252Fproduct%252F%253Fp%253DSN74HC11N%2526keyMatch%253DSN74HC11N" H 8150 3070 60  0001 L CNN
+F 4 "" H 8160 3150 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74HC11N" H 8160 3250 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 8160 3350 60  0001 L CNN "Category"
+F 7 "Logic - Gates and Inverters" H 8160 3450 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hc00" H 8170 3550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74HC00N/296-1563-5-ND/277209" H 8150 3670 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC GATE NAND 4CH 2-INP 14DIP" H 8150 3770 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 8150 3870 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8150 3970 60  0001 L CNN "Status"
+	1    7740 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618FFE6B
+P 7100 6295
+F 0 "#PWR?" H 7100 6045 50  0001 C CNN
+F 1 "GND" H 7105 6122 50  0000 C CNN
+F 2 "" H 7100 6295 50  0001 C CNN
+F 3 "" H 7100 6295 50  0001 C CNN
+	1    7100 6295
+	1    0    0    -1  
+$EndComp
+Connection ~ 7100 3560
+Wire Wire Line
+	7100 3560 7100 3715
+Wire Wire Line
+	6600 3560 7100 3560
+Wire Wire Line
+	7100 3560 7100 3485
+$Comp
+L power:VCC #PWR?
+U 1 1 618FABB9
+P 7100 3485
+F 0 "#PWR?" H 7100 3335 50  0001 C CNN
+F 1 "VCC" H 7115 3658 50  0000 C CNN
+F 2 "" H 7100 3485 50  0001 C CNN
+F 3 "" H 7100 3485 50  0001 C CNN
+	1    7100 3485
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 618F83E8
+P 6600 3660
+F 0 "C?" H 6475 3760 50  0000 L CNN
+F 1 "10uF" H 6375 3585 50  0000 L CNN
+F 2 "" H 6600 3660 50  0001 C CNN
+F 3 "~" H 6600 3660 50  0001 C CNN
+	1    6600 3660
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618F8054
+P 6600 3760
+F 0 "#PWR?" H 6600 3510 50  0001 C CNN
+F 1 "GND" H 6605 3587 50  0001 C CNN
+F 2 "" H 6600 3760 50  0001 C CNN
+F 3 "" H 6600 3760 50  0001 C CNN
+	1    6600 3760
+	1    0    0    -1  
+$EndComp
+$Comp
+L IPEPS_Elec:SN74HC86N U?
+U 1 1 618F3369
+P 7100 5035
+F 0 "U?" H 6825 6310 50  0000 C CNN
+F 1 "SN74HC86N" H 7475 3810 50  0000 C CNN
+F 2 "digikey-footprints:DIP-14_W3mm" H 7830 6325 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74hc86.pdf?ts=1635939524941&ref_url=https%253A%252F%252Fwww.google.com%252F" H 7100 5305 50  0001 C CNN
+	1    7100 5035
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2545 4200 2545 5415
+Wire Wire Line
+	2545 5415 6370 5415
+Wire Wire Line
+	6370 5415 6370 4135
+Wire Wire Line
+	6370 4135 6670 4135
+Connection ~ 2545 4200
+Wire Wire Line
+	2400 4300 2400 5565
+Wire Wire Line
+	2400 5565 6460 5565
+Wire Wire Line
+	6460 5565 6460 4335
+Wire Wire Line
+	6460 4335 6660 4335
+Connection ~ 2400 4300
+Wire Wire Line
+	3815 1565 3655 1565
+Wire Wire Line
+	3655 1565 3655 2425
+Wire Wire Line
+	3655 2425 6515 2425
+Wire Wire Line
+	6515 2425 6515 3250
+Wire Wire Line
+	6515 3250 7530 3250
+Wire Wire Line
+	7530 3250 7530 4235
+Wire Wire Line
+	4415 1565 5700 1565
+Wire Wire Line
+	5700 1565 5700 2100
+Wire Wire Line
+	5700 2100 7440 2100
+Wire Wire Line
+	7225 2265 7225 2200
+Wire Wire Line
+	7225 2200 7440 2200
+Wire Wire Line
+	6075 2265 7225 2265
+Connection ~ 6075 2265
+Wire Wire Line
+	6075 2265 6075 1740
+$Comp
+L Device:R_Small R?
+U 1 1 619A0338
+P 9985 1705
+F 0 "R?" V 9789 1705 50  0000 C CNN
+F 1 "R_Small" V 9880 1705 50  0000 C CNN
+F 2 "" H 9985 1705 50  0001 C CNN
+F 3 "~" H 9985 1705 50  0001 C CNN
+	1    9985 1705
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 619A7E2C
+P 9960 1930
+F 0 "R?" V 9764 1930 50  0000 C CNN
+F 1 "R_Small" V 9855 1930 50  0000 C CNN
+F 2 "" H 9960 1930 50  0001 C CNN
+F 3 "~" H 9960 1930 50  0001 C CNN
+	1    9960 1930
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 619A8326
+P 9970 2170
+F 0 "R?" V 9774 2170 50  0000 C CNN
+F 1 "R_Small" V 9865 2170 50  0000 C CNN
+F 2 "" H 9970 2170 50  0001 C CNN
+F 3 "~" H 9970 2170 50  0001 C CNN
+	1    9970 2170
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 619A87C3
+P 9980 2415
+F 0 "R?" V 9784 2415 50  0000 C CNN
+F 1 "R_Small" V 9875 2415 50  0000 C CNN
+F 2 "" H 9980 2415 50  0001 C CNN
+F 3 "~" H 9980 2415 50  0001 C CNN
+	1    9980 2415
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 619A8D92
+P 10765 1690
+F 0 "D?" H 10758 1435 50  0000 C CNN
+F 1 "LED" H 10758 1526 50  0000 C CNN
+F 2 "" H 10765 1690 50  0001 C CNN
+F 3 "~" H 10765 1690 50  0001 C CNN
+	1    10765 1690
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 619AAC92
+P 10760 1955
+F 0 "D?" H 10753 1700 50  0000 C CNN
+F 1 "LED" H 10753 1791 50  0000 C CNN
+F 2 "" H 10760 1955 50  0001 C CNN
+F 3 "~" H 10760 1955 50  0001 C CNN
+	1    10760 1955
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 619AB423
+P 10745 2245
+F 0 "D?" H 10738 1990 50  0000 C CNN
+F 1 "LED" H 10738 2081 50  0000 C CNN
+F 2 "" H 10745 2245 50  0001 C CNN
+F 3 "~" H 10745 2245 50  0001 C CNN
+	1    10745 2245
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 619AB939
+P 10770 2495
+F 0 "D?" H 10763 2240 50  0000 C CNN
+F 1 "LED" H 10763 2331 50  0000 C CNN
+F 2 "" H 10770 2495 50  0001 C CNN
+F 3 "~" H 10770 2495 50  0001 C CNN
+	1    10770 2495
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q?
+U 1 1 619B388B
+P 9200 1290
+F 0 "Q?" H 9391 1336 50  0000 L CNN
+F 1 "BC547" H 9391 1245 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9400 1215 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 9200 1290 50  0001 L CNN
+	1    9200 1290
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q?
+U 1 1 619B4AB5
+P 9135 1840
+F 0 "Q?" H 9326 1886 50  0000 L CNN
+F 1 "BC547" H 9326 1795 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9335 1765 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 9135 1840 50  0001 L CNN
+	1    9135 1840
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q?
+U 1 1 619B5746
+P 9190 2380
+F 0 "Q?" H 9381 2426 50  0000 L CNN
+F 1 "BC547" H 9381 2335 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9390 2305 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 9190 2380 50  0001 L CNN
+	1    9190 2380
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q?
+U 1 1 619B6189
+P 9225 2920
+F 0 "Q?" H 9416 2966 50  0000 L CNN
+F 1 "BC547" H 9416 2875 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9425 2845 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 9225 2920 50  0001 L CNN
+	1    9225 2920
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
