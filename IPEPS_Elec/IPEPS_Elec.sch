@@ -709,4 +709,34 @@ F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 9225 2920 50  0001 L C
 	1    9225 2920
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 619B6EE2
+P 3735 4095
+F 0 "#PWR?" H 3735 3945 50  0001 C CNN
+F 1 "VCC" H 3750 4268 50  0000 C CNN
+F 2 "" H 3735 4095 50  0001 C CNN
+F 3 "" H 3735 4095 50  0001 C CNN
+	1    3735 4095
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 619B7C4D
+P 7340 1980
+F 0 "#PWR?" H 7340 1830 50  0001 C CNN
+F 1 "VCC" H 7355 2153 50  0000 C CNN
+F 2 "" H 7340 1980 50  0001 C CNN
+F 3 "" H 7340 1980 50  0001 C CNN
+	1    7340 1980
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3735 4095 3735 4400
+Wire Wire Line
+	3735 4400 3860 4400
+Wire Wire Line
+	7340 1980 7340 2300
+Wire Wire Line
+	7340 2300 7440 2300
 $EndSCHEMATC
