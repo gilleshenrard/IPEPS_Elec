@@ -16,45 +16,45 @@ $EndDescr
 $Comp
 L dk_Battery-Holders-Clips-Contacts:BS-7 BAT?
 U 1 1 61827D44
-P 1075 1625
-F 0 "BAT?" H 725 1700 60  0000 L CNN
-F 1 "BS-7" H 700 1600 60  0000 L CNN
-F 2 "digikey-footprints:Battery_Holder_Coin_2032_BS-7" H 1275 1825 60  0001 L CNN
-F 3 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" V 1275 1925 60  0001 L CNN
-F 4 "BS-7-ND" H 1275 2025 60  0001 L CNN "Digi-Key_PN"
-F 5 "BS-7" H 1275 2125 60  0001 L CNN "MPN"
-F 6 "Battery Products" H 1275 2225 60  0001 L CNN "Category"
-F 7 "Battery Holders, Clips, Contacts" H 1275 2325 60  0001 L CNN "Family"
-F 8 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" H 1275 2425 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/mpd-memory-protection-devices/BS-7/BS-7-ND/389447" H 1275 2525 60  0001 L CNN "DK_Detail_Page"
-F 10 "BATTERY HOLDER COIN 20MM PC PIN" H 1275 2625 60  0001 L CNN "Description"
-F 11 "MPD (Memory Protection Devices)" H 1275 2725 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 1275 2825 60  0001 L CNN "Status"
-	1    1075 1625
+P 945 1170
+F 0 "BAT?" H 595 1245 60  0000 L CNN
+F 1 "BS-7" H 570 1145 60  0000 L CNN
+F 2 "digikey-footprints:Battery_Holder_Coin_2032_BS-7" H 1145 1370 60  0001 L CNN
+F 3 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" V 1145 1470 60  0001 L CNN
+F 4 "BS-7-ND" H 1145 1570 60  0001 L CNN "Digi-Key_PN"
+F 5 "BS-7" H 1145 1670 60  0001 L CNN "MPN"
+F 6 "Battery Products" H 1145 1770 60  0001 L CNN "Category"
+F 7 "Battery Holders, Clips, Contacts" H 1145 1870 60  0001 L CNN "Family"
+F 8 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" H 1145 1970 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/mpd-memory-protection-devices/BS-7/BS-7-ND/389447" H 1145 2070 60  0001 L CNN "DK_Detail_Page"
+F 10 "BATTERY HOLDER COIN 20MM PC PIN" H 1145 2170 60  0001 L CNN "Description"
+F 11 "MPD (Memory Protection Devices)" H 1145 2270 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1145 2370 60  0001 L CNN "Status"
+	1    945  1170
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1750 1375 1075 1375
+	1620 920  945  920 
 Wire Wire Line
-	1075 1375 1075 1425
+	945  920  945  970 
 Wire Wire Line
-	1075 1825 1950 1825
+	945  1370 1820 1370
 Wire Wire Line
-	1950 1825 1950 1675
+	1820 1370 1820 1220
 $Comp
 L power:GND #PWR?
 U 1 1 61830670
-P 1075 1875
-F 0 "#PWR?" H 1075 1625 50  0001 C CNN
-F 1 "GND" H 1080 1702 50  0000 C CNN
-F 2 "" H 1075 1875 50  0001 C CNN
-F 3 "" H 1075 1875 50  0001 C CNN
-	1    1075 1875
+P 945 1420
+F 0 "#PWR?" H 945 1170 50  0001 C CNN
+F 1 "GND" H 950 1247 50  0000 C CNN
+F 2 "" H 945 1420 50  0001 C CNN
+F 3 "" H 945 1420 50  0001 C CNN
+	1    945  1420
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1075 1825 1075 1875
-Connection ~ 1075 1825
+	945  1370 945  1420
+Connection ~ 945  1370
 $Comp
 L IPEPS_Elec:SN74HC11N U?
 U 1 1 618658CA
@@ -122,23 +122,23 @@ $EndComp
 $Comp
 L Transistor_FET:AO3401A Q?
 U 1 1 61893D18
-P 1950 1475
-F 0 "Q?" V 2292 1475 50  0000 C CNN
-F 1 "AO3401A" V 2201 1475 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2150 1400 50  0001 L CIN
-F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 1950 1475 50  0001 L CNN
-	1    1950 1475
+P 1820 1020
+F 0 "Q?" V 2162 1020 50  0000 C CNN
+F 1 "AO3401A" V 2071 1020 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2020 945 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 1820 1020 50  0001 L CNN
+	1    1820 1020
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 61896917
-P 2300 1300
-F 0 "#PWR?" H 2300 1150 50  0001 C CNN
-F 1 "VCC" H 2315 1473 50  0000 C CNN
-F 2 "" H 2300 1300 50  0001 C CNN
-F 3 "" H 2300 1300 50  0001 C CNN
-	1    2300 1300
+P 2170 845
+F 0 "#PWR?" H 2170 695 50  0001 C CNN
+F 1 "VCC" H 2185 1018 50  0000 C CNN
+F 2 "" H 2170 845 50  0001 C CNN
+F 3 "" H 2170 845 50  0001 C CNN
+	1    2170 845 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -153,9 +153,9 @@ F 3 "" H 1250 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2150 1375 2300 1375
+	2020 920  2170 920 
 Wire Wire Line
-	2300 1375 2300 1300
+	2170 920  2170 845 
 $Comp
 L power:VCC #PWR?
 U 1 1 618988A0
@@ -481,57 +481,6 @@ F 3 "" H 7100 6295 50  0001 C CNN
 	1    7100 6295
 	1    0    0    -1  
 $EndComp
-Connection ~ 7100 3560
-Wire Wire Line
-	7100 3560 7100 3715
-Wire Wire Line
-	6600 3560 7100 3560
-Wire Wire Line
-	7100 3560 7100 3485
-$Comp
-L power:VCC #PWR?
-U 1 1 618FABB9
-P 7100 3485
-F 0 "#PWR?" H 7100 3335 50  0001 C CNN
-F 1 "VCC" H 7115 3658 50  0000 C CNN
-F 2 "" H 7100 3485 50  0001 C CNN
-F 3 "" H 7100 3485 50  0001 C CNN
-	1    7100 3485
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 618F83E8
-P 6600 3660
-F 0 "C?" H 6475 3760 50  0000 L CNN
-F 1 "10uF" H 6375 3585 50  0000 L CNN
-F 2 "" H 6600 3660 50  0001 C CNN
-F 3 "~" H 6600 3660 50  0001 C CNN
-	1    6600 3660
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 618F8054
-P 6600 3760
-F 0 "#PWR?" H 6600 3510 50  0001 C CNN
-F 1 "GND" H 6605 3587 50  0001 C CNN
-F 2 "" H 6600 3760 50  0001 C CNN
-F 3 "" H 6600 3760 50  0001 C CNN
-	1    6600 3760
-	1    0    0    -1  
-$EndComp
-$Comp
-L IPEPS_Elec:SN74HC86N U?
-U 1 1 618F3369
-P 7100 5035
-F 0 "U?" H 6825 6310 50  0000 C CNN
-F 1 "SN74HC86N" H 7475 3810 50  0000 C CNN
-F 2 "digikey-footprints:DIP-14_W3mm" H 7830 6325 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74hc86.pdf?ts=1635939524941&ref_url=https%253A%252F%252Fwww.google.com%252F" H 7100 5305 50  0001 C CNN
-	1    7100 5035
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2545 4200 2545 5415
 Wire Wire Line
@@ -547,27 +496,7 @@ Wire Wire Line
 	2400 5565 6460 5565
 Wire Wire Line
 	6460 5565 6460 4335
-Wire Wire Line
-	6460 4335 6660 4335
 Connection ~ 2400 4300
-Wire Wire Line
-	3815 1565 3655 1565
-Wire Wire Line
-	3655 1565 3655 2425
-Wire Wire Line
-	3655 2425 6515 2425
-Wire Wire Line
-	6515 2425 6515 3250
-Wire Wire Line
-	6515 3250 7530 3250
-Wire Wire Line
-	7530 3250 7530 4235
-Wire Wire Line
-	4415 1565 5700 1565
-Wire Wire Line
-	5700 1565 5700 2100
-Wire Wire Line
-	5700 2100 7440 2100
 Wire Wire Line
 	7225 2265 7225 2200
 Wire Wire Line
@@ -899,4 +828,24 @@ Wire Wire Line
 	8745 5995 8800 5995
 Wire Wire Line
 	10215 6050 10250 6050
+$Comp
+L IPEPS_Elec:CD74HC7266E U?
+U 1 1 6192A273
+P 6970 4235
+F 0 "U?" H 6970 4560 50  0000 C CNN
+F 1 "CD74HC7266E" H 6970 4469 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6960 3935 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/cd74hc7266.pdf" H 6970 4235 50  0001 C CNN
+	1    6970 4235
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6460 4335 6670 4335
+Wire Wire Line
+	7270 4240 7270 4235
+Wire Wire Line
+	7270 2100 7440 2100
+Connection ~ 7270 4235
+Wire Wire Line
+	7270 4235 7270 2100
 $EndSCHEMATC
