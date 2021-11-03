@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "Distributeur de boissons"
+Date "2021-11-03"
+Rev "1.0"
 Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment1 "Schematics under MIT License"
+Comment2 "Author : Gilles Henrard"
+Comment3 "Assigned by : Fabrizio Grifasi"
+Comment4 "IPEPS Seraing - Electronics course"
 $EndDescr
 $Comp
 L dk_Battery-Holders-Clips-Contacts:BS-7 BAT?
@@ -580,133 +580,46 @@ Wire Wire Line
 $Comp
 L Device:R_Small R?
 U 1 1 619A0338
-P 9985 1705
-F 0 "R?" V 9789 1705 50  0000 C CNN
-F 1 "R_Small" V 9880 1705 50  0000 C CNN
-F 2 "" H 9985 1705 50  0001 C CNN
-F 3 "~" H 9985 1705 50  0001 C CNN
-	1    9985 1705
-	0    1    1    0   
+P 9315 3795
+F 0 "R?" V 9119 3795 50  0000 C CNN
+F 1 "220R" V 9210 3795 50  0000 C CNN
+F 2 "" H 9315 3795 50  0001 C CNN
+F 3 "~" H 9315 3795 50  0001 C CNN
+	1    9315 3795
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 619A7E2C
-P 9960 1930
-F 0 "R?" V 9764 1930 50  0000 C CNN
-F 1 "R_Small" V 9855 1930 50  0000 C CNN
-F 2 "" H 9960 1930 50  0001 C CNN
-F 3 "~" H 9960 1930 50  0001 C CNN
-	1    9960 1930
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 619A8326
-P 9970 2170
-F 0 "R?" V 9774 2170 50  0000 C CNN
-F 1 "R_Small" V 9865 2170 50  0000 C CNN
-F 2 "" H 9970 2170 50  0001 C CNN
-F 3 "~" H 9970 2170 50  0001 C CNN
-	1    9970 2170
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 619A87C3
-P 9980 2415
-F 0 "R?" V 9784 2415 50  0000 C CNN
-F 1 "R_Small" V 9875 2415 50  0000 C CNN
-F 2 "" H 9980 2415 50  0001 C CNN
-F 3 "~" H 9980 2415 50  0001 C CNN
-	1    9980 2415
+P 8915 4450
+F 0 "R?" V 8719 4450 50  0000 C CNN
+F 1 "47k" V 8810 4450 50  0000 C CNN
+F 2 "" H 8915 4450 50  0001 C CNN
+F 3 "~" H 8915 4450 50  0001 C CNN
+	1    8915 4450
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D?
 U 1 1 619A8D92
-P 10765 1690
-F 0 "D?" H 10758 1435 50  0000 C CNN
-F 1 "LED" H 10758 1526 50  0000 C CNN
-F 2 "" H 10765 1690 50  0001 C CNN
-F 3 "~" H 10765 1690 50  0001 C CNN
-	1    10765 1690
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 619AAC92
-P 10760 1955
-F 0 "D?" H 10753 1700 50  0000 C CNN
-F 1 "LED" H 10753 1791 50  0000 C CNN
-F 2 "" H 10760 1955 50  0001 C CNN
-F 3 "~" H 10760 1955 50  0001 C CNN
-	1    10760 1955
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 619AB423
-P 10745 2245
-F 0 "D?" H 10738 1990 50  0000 C CNN
-F 1 "LED" H 10738 2081 50  0000 C CNN
-F 2 "" H 10745 2245 50  0001 C CNN
-F 3 "~" H 10745 2245 50  0001 C CNN
-	1    10745 2245
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 619AB939
-P 10770 2495
-F 0 "D?" H 10763 2240 50  0000 C CNN
-F 1 "LED" H 10763 2331 50  0000 C CNN
-F 2 "" H 10770 2495 50  0001 C CNN
-F 3 "~" H 10770 2495 50  0001 C CNN
-	1    10770 2495
-	-1   0    0    1   
+P 9315 4045
+F 0 "D?" H 9320 3830 50  0000 C CNN
+F 1 "C" H 9315 3920 50  0000 C CNN
+F 2 "" H 9315 4045 50  0001 C CNN
+F 3 "~" H 9315 4045 50  0001 C CNN
+F 4 "Green" H 9310 4150 50  0000 C CNN "Colour"
+	1    9315 4045
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Transistor_BJT:BC547 Q?
 U 1 1 619B388B
-P 9200 1290
-F 0 "Q?" H 9391 1336 50  0000 L CNN
-F 1 "BC547" H 9391 1245 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9400 1215 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 9200 1290 50  0001 L CNN
-	1    9200 1290
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:BC547 Q?
-U 1 1 619B4AB5
-P 9135 1840
-F 0 "Q?" H 9326 1886 50  0000 L CNN
-F 1 "BC547" H 9326 1795 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9335 1765 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 9135 1840 50  0001 L CNN
-	1    9135 1840
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:BC547 Q?
-U 1 1 619B5746
-P 9190 2380
-F 0 "Q?" H 9381 2426 50  0000 L CNN
-F 1 "BC547" H 9381 2335 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9390 2305 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 9190 2380 50  0001 L CNN
-	1    9190 2380
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:BC547 Q?
-U 1 1 619B6189
-P 9225 2920
-F 0 "Q?" H 9416 2966 50  0000 L CNN
-F 1 "BC547" H 9416 2875 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9425 2845 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 9225 2920 50  0001 L CNN
-	1    9225 2920
+P 9215 4450
+F 0 "Q?" H 9406 4496 50  0000 L CNN
+F 1 "BC547" H 9406 4405 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9415 4375 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 9215 4450 50  0001 L CNN
+	1    9215 4450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -739,4 +652,251 @@ Wire Wire Line
 	7340 1980 7340 2300
 Wire Wire Line
 	7340 2300 7440 2300
+Wire Wire Line
+	9315 4195 9315 4250
+$Comp
+L power:GND #PWR?
+U 1 1 61856A1C
+P 9315 4650
+F 0 "#PWR?" H 9315 4400 50  0001 C CNN
+F 1 "GND" H 9320 4477 50  0000 C CNN
+F 2 "" H 9315 4650 50  0001 C CNN
+F 3 "" H 9315 4650 50  0001 C CNN
+	1    9315 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 61857B6B
+P 9315 3695
+F 0 "#PWR?" H 9315 3545 50  0001 C CNN
+F 1 "VCC" H 9330 3868 50  0000 C CNN
+F 2 "" H 9315 3695 50  0001 C CNN
+F 3 "" H 9315 3695 50  0001 C CNN
+	1    9315 3695
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61878320
+P 10745 3820
+F 0 "R?" V 10549 3820 50  0000 C CNN
+F 1 "220R" V 10640 3820 50  0000 C CNN
+F 2 "" H 10745 3820 50  0001 C CNN
+F 3 "~" H 10745 3820 50  0001 C CNN
+	1    10745 3820
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 6187878E
+P 10345 4475
+F 0 "R?" V 10149 4475 50  0000 C CNN
+F 1 "47k" V 10240 4475 50  0000 C CNN
+F 2 "" H 10345 4475 50  0001 C CNN
+F 3 "~" H 10345 4475 50  0001 C CNN
+	1    10345 4475
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 61878799
+P 10745 4070
+F 0 "D?" H 10745 3870 50  0000 C CNN
+F 1 "T" H 10740 3950 50  0000 C CNN
+F 2 "" H 10745 4070 50  0001 C CNN
+F 3 "~" H 10745 4070 50  0001 C CNN
+F 4 "Green" H 10740 4175 50  0000 C CNN "Colour"
+	1    10745 4070
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q?
+U 1 1 618787A3
+P 10645 4475
+F 0 "Q?" H 10836 4521 50  0000 L CNN
+F 1 "BC547" H 10836 4430 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 10845 4400 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 10645 4475 50  0001 L CNN
+	1    10645 4475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10745 4220 10745 4275
+$Comp
+L power:GND #PWR?
+U 1 1 618787AE
+P 10745 4675
+F 0 "#PWR?" H 10745 4425 50  0001 C CNN
+F 1 "GND" H 10750 4502 50  0000 C CNN
+F 2 "" H 10745 4675 50  0001 C CNN
+F 3 "" H 10745 4675 50  0001 C CNN
+	1    10745 4675
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 618787B8
+P 10745 3720
+F 0 "#PWR?" H 10745 3570 50  0001 C CNN
+F 1 "VCC" H 10760 3893 50  0000 C CNN
+F 2 "" H 10745 3720 50  0001 C CNN
+F 3 "" H 10745 3720 50  0001 C CNN
+	1    10745 3720
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 6187EC5E
+P 9300 5340
+F 0 "R?" V 9104 5340 50  0000 C CNN
+F 1 "220R" V 9195 5340 50  0000 C CNN
+F 2 "" H 9300 5340 50  0001 C CNN
+F 3 "~" H 9300 5340 50  0001 C CNN
+	1    9300 5340
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 6187F148
+P 8900 5995
+F 0 "R?" V 8704 5995 50  0000 C CNN
+F 1 "47k" V 8795 5995 50  0000 C CNN
+F 2 "" H 8900 5995 50  0001 C CNN
+F 3 "~" H 8900 5995 50  0001 C CNN
+	1    8900 5995
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 6187F153
+P 9300 5590
+F 0 "D?" H 9295 5365 50  0000 C CNN
+F 1 "L" H 9295 5465 50  0000 C CNN
+F 2 "" H 9300 5590 50  0001 C CNN
+F 3 "~" H 9300 5590 50  0001 C CNN
+F 4 "Green" H 9295 5695 50  0000 C CNN "Colour"
+	1    9300 5590
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q?
+U 1 1 6187F15D
+P 9200 5995
+F 0 "Q?" H 9391 6041 50  0000 L CNN
+F 1 "BC547" H 9391 5950 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9400 5920 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 9200 5995 50  0001 L CNN
+	1    9200 5995
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 5740 9300 5795
+$Comp
+L power:GND #PWR?
+U 1 1 6187F168
+P 9300 6195
+F 0 "#PWR?" H 9300 5945 50  0001 C CNN
+F 1 "GND" H 9305 6022 50  0000 C CNN
+F 2 "" H 9300 6195 50  0001 C CNN
+F 3 "" H 9300 6195 50  0001 C CNN
+	1    9300 6195
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 6187F172
+P 9300 5240
+F 0 "#PWR?" H 9300 5090 50  0001 C CNN
+F 1 "VCC" H 9315 5413 50  0000 C CNN
+F 2 "" H 9300 5240 50  0001 C CNN
+F 3 "" H 9300 5240 50  0001 C CNN
+	1    9300 5240
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 618864E1
+P 10750 5395
+F 0 "R?" V 10554 5395 50  0000 C CNN
+F 1 "220R" V 10645 5395 50  0000 C CNN
+F 2 "" H 10750 5395 50  0001 C CNN
+F 3 "~" H 10750 5395 50  0001 C CNN
+	1    10750 5395
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61886A47
+P 10350 6050
+F 0 "R?" V 10154 6050 50  0000 C CNN
+F 1 "47k" V 10245 6050 50  0000 C CNN
+F 2 "" H 10350 6050 50  0001 C CNN
+F 3 "~" H 10350 6050 50  0001 C CNN
+	1    10350 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 61886A52
+P 10750 5645
+F 0 "D?" H 10750 5425 50  0000 C CNN
+F 1 "RJ" H 10745 5510 50  0000 C CNN
+F 2 "" H 10750 5645 50  0001 C CNN
+F 3 "~" H 10750 5645 50  0001 C CNN
+F 4 "Red" H 10745 5750 50  0000 C CNN "Colour"
+	1    10750 5645
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q?
+U 1 1 61886A5C
+P 10650 6050
+F 0 "Q?" H 10841 6096 50  0000 L CNN
+F 1 "BC547" H 10841 6005 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 10850 5975 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 10650 6050 50  0001 L CNN
+	1    10650 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10750 5795 10750 5850
+$Comp
+L power:GND #PWR?
+U 1 1 61886A67
+P 10750 6250
+F 0 "#PWR?" H 10750 6000 50  0001 C CNN
+F 1 "GND" H 10755 6077 50  0000 C CNN
+F 2 "" H 10750 6250 50  0001 C CNN
+F 3 "" H 10750 6250 50  0001 C CNN
+	1    10750 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 61886A71
+P 10750 5295
+F 0 "#PWR?" H 10750 5145 50  0001 C CNN
+F 1 "VCC" H 10765 5468 50  0000 C CNN
+F 2 "" H 10750 5295 50  0001 C CNN
+F 3 "" H 10750 5295 50  0001 C CNN
+	1    10750 5295
+	1    0    0    -1  
+$EndComp
+Text GLabel 8760 4450 0    50   Input ~ 0
+Out_C
+Text GLabel 10215 4475 0    50   Input ~ 0
+Out_T
+Text GLabel 10215 6050 0    50   Input ~ 0
+Out_RJ
+Text GLabel 8745 5995 0    50   Input ~ 0
+Out_L
+Wire Wire Line
+	8760 4450 8815 4450
+Wire Wire Line
+	10215 4475 10245 4475
+Wire Wire Line
+	8745 5995 8800 5995
+Wire Wire Line
+	10215 6050 10250 6050
 $EndSCHEMATC
