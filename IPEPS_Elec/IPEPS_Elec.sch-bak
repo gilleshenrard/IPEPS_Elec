@@ -513,8 +513,8 @@ $Comp
 L IPEPS_Elec:CD74HC7266E U?
 U 1 1 6192A273
 P 5795 5805
-F 0 "U?" H 5795 6130 50  0000 C CNN
-F 1 "CD74HC7266E" H 5795 6039 50  0000 C CNN
+F 0 "U?" H 5745 5590 50  0000 C CNN
+F 1 "CD74HC7266E" H 5760 5490 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm" H 5785 5505 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/cd74hc7266.pdf" H 5795 5805 50  0001 C CNN
 	1    5795 5805
@@ -621,12 +621,6 @@ F 3 "~" H 3905 1655 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4710 4270 5485 4270
-Wire Wire Line
-	4830 4370 5485 4370
-Wire Wire Line
-	6085 4270 6085 3535
-Wire Wire Line
 	4710 1455 4710 2685
 Wire Wire Line
 	4710 1455 5480 1455
@@ -635,19 +629,11 @@ Wire Wire Line
 Wire Wire Line
 	4830 2015 5480 2015
 Wire Wire Line
-	6085 4370 6145 4370
-Wire Wire Line
-	6145 4370 6145 3475
-Wire Wire Line
 	5480 2685 4710 2685
 Connection ~ 4710 2685
 Wire Wire Line
-	4710 2685 4710 4270
-Wire Wire Line
 	5480 2785 4830 2785
 Connection ~ 4830 2785
-Wire Wire Line
-	4830 2785 4830 4370
 $Comp
 L power:VCC #PWR?
 U 1 1 619FD2A4
@@ -672,27 +658,9 @@ C+T
 Wire Wire Line
 	5425 4470 5485 4470
 Wire Wire Line
-	4830 4370 4830 5705
-Wire Wire Line
 	4830 5705 5495 5705
-Connection ~ 4830 4370
-Wire Wire Line
-	4710 4270 4710 5905
 Wire Wire Line
 	4710 5905 5495 5905
-Connection ~ 4710 4270
-Wire Wire Line
-	5080 2115 5080 3535
-Wire Wire Line
-	5080 3535 6085 3535
-Wire Wire Line
-	5080 2115 5480 2115
-Wire Wire Line
-	5180 1555 5180 3475
-Wire Wire Line
-	5180 3475 6145 3475
-Wire Wire Line
-	5180 1555 5480 1555
 Wire Wire Line
 	3705 1455 3705 1305
 Wire Wire Line
@@ -701,10 +669,6 @@ Connection ~ 3705 1455
 Connection ~ 3705 2015
 Wire Wire Line
 	3705 2015 3705 2550
-Wire Wire Line
-	5480 1655 4945 1655
-Wire Wire Line
-	4945 1655 4945 2215
 Wire Wire Line
 	5480 2215 4945 2215
 Connection ~ 4945 2215
@@ -950,4 +914,42 @@ Wire Wire Line
 	4255 2550 4570 2550
 Wire Wire Line
 	4105 2550 4255 2550
+Wire Wire Line
+	6235 4370 6235 3375
+Wire Wire Line
+	6235 3375 5180 3375
+Wire Wire Line
+	6085 4370 6235 4370
+Wire Wire Line
+	6085 4270 6130 4270
+Wire Wire Line
+	6130 4270 6130 3485
+Wire Wire Line
+	6130 3485 5080 3485
+Wire Wire Line
+	4830 2785 4830 4270
+Wire Wire Line
+	4710 2685 4710 4370
+Wire Wire Line
+	5485 4370 4710 4370
+Connection ~ 4710 4370
+Wire Wire Line
+	4710 4370 4710 5905
+Wire Wire Line
+	5485 4270 4830 4270
+Connection ~ 4830 4270
+Wire Wire Line
+	4830 4270 4830 5705
+Wire Wire Line
+	5180 3375 5180 2115
+Wire Wire Line
+	5180 2115 5480 2115
+Wire Wire Line
+	4945 1555 4945 2215
+Wire Wire Line
+	4945 1555 5480 1555
+Wire Wire Line
+	5080 1655 5080 3485
+Wire Wire Line
+	5080 1655 5480 1655
 $EndSCHEMATC
