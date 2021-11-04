@@ -16,45 +16,37 @@ $EndDescr
 $Comp
 L dk_Battery-Holders-Clips-Contacts:BS-7 BAT?
 U 1 1 61827D44
-P 1280 5245
-F 0 "BAT?" H 930 5320 60  0000 L CNN
-F 1 "BS-7" H 905 5220 60  0000 L CNN
-F 2 "digikey-footprints:Battery_Holder_Coin_2032_BS-7" H 1480 5445 60  0001 L CNN
-F 3 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" V 1480 5545 60  0001 L CNN
-F 4 "BS-7-ND" H 1480 5645 60  0001 L CNN "Digi-Key_PN"
-F 5 "BS-7" H 1480 5745 60  0001 L CNN "MPN"
-F 6 "Battery Products" H 1480 5845 60  0001 L CNN "Category"
-F 7 "Battery Holders, Clips, Contacts" H 1480 5945 60  0001 L CNN "Family"
-F 8 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" H 1480 6045 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/mpd-memory-protection-devices/BS-7/BS-7-ND/389447" H 1480 6145 60  0001 L CNN "DK_Detail_Page"
-F 10 "BATTERY HOLDER COIN 20MM PC PIN" H 1480 6245 60  0001 L CNN "Description"
-F 11 "MPD (Memory Protection Devices)" H 1480 6345 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 1480 6445 60  0001 L CNN "Status"
-	1    1280 5245
+P 1060 1455
+F 0 "BAT?" H 710 1530 60  0000 L CNN
+F 1 "BS-7" H 685 1430 60  0000 L CNN
+F 2 "digikey-footprints:Battery_Holder_Coin_2032_BS-7" H 1260 1655 60  0001 L CNN
+F 3 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" V 1260 1755 60  0001 L CNN
+F 4 "BS-7-ND" H 1260 1855 60  0001 L CNN "Digi-Key_PN"
+F 5 "BS-7" H 1260 1955 60  0001 L CNN "MPN"
+F 6 "Battery Products" H 1260 2055 60  0001 L CNN "Category"
+F 7 "Battery Holders, Clips, Contacts" H 1260 2155 60  0001 L CNN "Family"
+F 8 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" H 1260 2255 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/mpd-memory-protection-devices/BS-7/BS-7-ND/389447" H 1260 2355 60  0001 L CNN "DK_Detail_Page"
+F 10 "BATTERY HOLDER COIN 20MM PC PIN" H 1260 2455 60  0001 L CNN "Description"
+F 11 "MPD (Memory Protection Devices)" H 1260 2555 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1260 2655 60  0001 L CNN "Status"
+	1    1060 1455
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1955 4995 1280 4995
-Wire Wire Line
-	1280 4995 1280 5045
-Wire Wire Line
-	1280 5445 2155 5445
-Wire Wire Line
-	2155 5445 2155 5295
 $Comp
 L power:GND #PWR?
 U 1 1 61830670
-P 1280 5495
-F 0 "#PWR?" H 1280 5245 50  0001 C CNN
-F 1 "GND" H 1285 5322 50  0000 C CNN
-F 2 "" H 1280 5495 50  0001 C CNN
-F 3 "" H 1280 5495 50  0001 C CNN
-	1    1280 5495
+P 1060 1705
+F 0 "#PWR?" H 1060 1455 50  0001 C CNN
+F 1 "GND" H 1065 1532 50  0000 C CNN
+F 2 "" H 1060 1705 50  0001 C CNN
+F 3 "" H 1060 1705 50  0001 C CNN
+	1    1060 1705
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1280 5445 1280 5495
-Connection ~ 1280 5445
+	1060 1655 1060 1705
+Connection ~ 1060 1655
 $Comp
 L Switch:SW_Push SW?
 U 1 1 6188F251
@@ -80,23 +72,23 @@ $EndComp
 $Comp
 L Transistor_FET:AO3401A Q?
 U 1 1 61893D18
-P 2155 5095
-F 0 "Q?" V 2497 5095 50  0000 C CNN
-F 1 "AO3401A" V 2406 5095 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2355 5020 50  0001 L CIN
-F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 2155 5095 50  0001 L CNN
-	1    2155 5095
+P 1950 1400
+F 0 "Q?" V 2292 1400 50  0000 C CNN
+F 1 "AO3401A" V 2201 1400 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2150 1325 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 1950 1400 50  0001 L CNN
+	1    1950 1400
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 61896917
-P 2505 4920
-F 0 "#PWR?" H 2505 4770 50  0001 C CNN
-F 1 "VCC" H 2520 5093 50  0000 C CNN
-F 2 "" H 2505 4920 50  0001 C CNN
-F 3 "" H 2505 4920 50  0001 C CNN
-	1    2505 4920
+P 2300 1225
+F 0 "#PWR?" H 2300 1075 50  0001 C CNN
+F 1 "VCC" H 2315 1398 50  0000 C CNN
+F 2 "" H 2300 1225 50  0001 C CNN
+F 3 "" H 2300 1225 50  0001 C CNN
+	1    2300 1225
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -111,9 +103,9 @@ F 3 "" H 3135 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2355 4995 2505 4995
+	2150 1300 2300 1300
 Wire Wire Line
-	2505 4995 2505 4920
+	2300 1300 2300 1225
 $Comp
 L power:VCC #PWR?
 U 1 1 618988A0
@@ -914,4 +906,34 @@ Wire Wire Line
 	5210 4315 6735 4315
 Wire Wire Line
 	5220 5650 6230 5650
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 61B3D302
+P 1450 1200
+F 0 "SW?" H 1400 1070 50  0000 C CNN
+F 1 "SW_MAIN" H 1445 1375 50  0000 C CNN
+F 2 "" H 1450 1200 50  0001 C CNN
+F 3 "~" H 1450 1200 50  0001 C CNN
+	1    1450 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1655 1950 1600
+Wire Wire Line
+	1060 1655 1950 1655
+Wire Wire Line
+	1650 1300 1750 1300
+Wire Wire Line
+	1060 1200 1220 1200
+Wire Wire Line
+	1060 1200 1060 1255
+Connection ~ 1220 1200
+Wire Wire Line
+	1220 1200 1250 1200
+Wire Wire Line
+	1650 925  1220 925 
+Wire Wire Line
+	1650 925  1650 1100
+Wire Wire Line
+	1220 925  1220 1200
 $EndSCHEMATC
