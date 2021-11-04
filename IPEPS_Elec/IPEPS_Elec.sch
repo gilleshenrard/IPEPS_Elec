@@ -708,8 +708,6 @@ IN_J
 Wire Wire Line
 	8270 5170 8355 5170
 Wire Wire Line
-	7850 5945 7850 5270
-Wire Wire Line
 	7850 5270 8355 5270
 $Comp
 L power:GND #PWR?
@@ -923,12 +921,8 @@ Wire Wire Line
 	6230 4510 5455 4510
 Connection ~ 5455 4510
 Wire Wire Line
-	5455 4510 5455 6045
-Wire Wire Line
 	6230 4410 5575 4410
 Connection ~ 5575 4410
-Wire Wire Line
-	5575 4410 5575 5845
 Wire Wire Line
 	5925 3515 5925 2255
 Wire Wire Line
@@ -1003,4 +997,10 @@ F 3 "" H 6520 6385 50  0001 C CNN
 	1    6520 6385
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5455 4510 5455 6235
+Wire Wire Line
+	5575 4410 5575 6035
+Wire Wire Line
+	7850 5270 7850 6135
 $EndSCHEMATC
