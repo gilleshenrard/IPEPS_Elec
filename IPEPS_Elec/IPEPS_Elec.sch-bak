@@ -36,17 +36,14 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 61830670
-P 1570 2300
-F 0 "#PWR?" H 1570 2050 50  0001 C CNN
-F 1 "GND" H 1575 2127 50  0000 C CNN
-F 2 "" H 1570 2300 50  0001 C CNN
-F 3 "" H 1570 2300 50  0001 C CNN
-	1    1570 2300
+P 1570 2520
+F 0 "#PWR?" H 1570 2270 50  0001 C CNN
+F 1 "GND" H 1575 2347 50  0000 C CNN
+F 2 "" H 1570 2520 50  0001 C CNN
+F 3 "" H 1570 2520 50  0001 C CNN
+	1    1570 2520
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1570 2250 1570 2300
-Connection ~ 1570 2250
 $Comp
 L Switch:SW_Push SW?
 U 1 1 6188F251
@@ -83,12 +80,12 @@ $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 61896917
-P 2925 1825
-F 0 "#PWR?" H 2925 1675 50  0001 C CNN
-F 1 "VCC" H 2940 1998 50  0000 C CNN
-F 2 "" H 2925 1825 50  0001 C CNN
-F 3 "" H 2925 1825 50  0001 C CNN
-	1    2925 1825
+P 3455 1800
+F 0 "#PWR?" H 3455 1650 50  0001 C CNN
+F 1 "VCC" H 3470 1973 50  0000 C CNN
+F 2 "" H 3455 1800 50  0001 C CNN
+F 3 "" H 3455 1800 50  0001 C CNN
+	1    3455 1800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -708,8 +705,6 @@ IN_J
 Wire Wire Line
 	8270 5170 8355 5170
 Wire Wire Line
-	7850 5945 7850 5270
-Wire Wire Line
 	7850 5270 8355 5270
 $Comp
 L power:GND #PWR?
@@ -822,10 +817,6 @@ F 3 "~" H 1960 1795 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2460 2250 2460 2195
-Wire Wire Line
-	1570 2250 2460 2250
-Wire Wire Line
 	2160 1895 2260 1895
 Wire Wire Line
 	1570 1795 1730 1795
@@ -840,8 +831,6 @@ Wire Wire Line
 	2160 1485 2160 1695
 Wire Wire Line
 	1730 1485 1730 1795
-Wire Wire Line
-	2925 1895 2925 1825
 Wire Wire Line
 	2660 1895 2755 1895
 $Comp
@@ -858,19 +847,6 @@ $EndComp
 Wire Wire Line
 	2755 1935 2755 1895
 Connection ~ 2755 1895
-Wire Wire Line
-	2755 1895 2925 1895
-$Comp
-L power:GND #PWR?
-U 1 1 61B5BC87
-P 2755 2135
-F 0 "#PWR?" H 2755 1885 50  0001 C CNN
-F 1 "GND" H 2760 1962 50  0000 C CNN
-F 2 "" H 2755 2135 50  0001 C CNN
-F 3 "" H 2755 2135 50  0001 C CNN
-	1    2755 2135
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6825 1695 7190 1695
 Wire Wire Line
@@ -923,12 +899,8 @@ Wire Wire Line
 	6230 4510 5455 4510
 Connection ~ 5455 4510
 Wire Wire Line
-	5455 4510 5455 6045
-Wire Wire Line
 	6230 4410 5575 4410
 Connection ~ 5575 4410
-Wire Wire Line
-	5575 4410 5575 5845
 Wire Wire Line
 	5925 3515 5925 2255
 Wire Wire Line
@@ -1003,4 +975,61 @@ F 3 "" H 6520 6385 50  0001 C CNN
 	1    6520 6385
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5455 4510 5455 6235
+Wire Wire Line
+	5575 4410 5575 6035
+Wire Wire Line
+	7850 5270 7850 6135
+$Comp
+L Device:R_Small R?
+U 1 1 6184023A
+P 3165 2060
+F 0 "R?" V 2969 2060 50  0000 C CNN
+F 1 "100R" V 3060 2060 50  0000 C CNN
+F 2 "" H 3165 2060 50  0001 C CNN
+F 3 "~" H 3165 2060 50  0001 C CNN
+	1    3165 2060
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2755 1895 3165 1895
+Wire Wire Line
+	3165 1960 3165 1895
+Connection ~ 3165 1895
+Wire Wire Line
+	3165 1895 3455 1895
+$Comp
+L Device:LED D?
+U 1 1 6184089B
+P 3165 2310
+F 0 "D?" H 3165 2110 50  0000 C CNN
+F 1 "T" H 3160 2190 50  0000 C CNN
+F 2 "" H 3165 2310 50  0001 C CNN
+F 3 "~" H 3165 2310 50  0001 C CNN
+F 4 "Blue" H 3160 2415 50  0000 C CNN "Colour"
+	1    3165 2310
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1570 2250 1570 2515
+Wire Wire Line
+	2460 2515 1570 2515
+Wire Wire Line
+	2460 2195 2460 2515
+Connection ~ 1570 2515
+Wire Wire Line
+	1570 2515 1570 2520
+Wire Wire Line
+	2755 2135 2755 2515
+Wire Wire Line
+	2755 2515 2460 2515
+Connection ~ 2460 2515
+Wire Wire Line
+	3165 2460 3165 2515
+Wire Wire Line
+	3165 2515 2755 2515
+Connection ~ 2755 2515
+Wire Wire Line
+	3455 1800 3455 1895
 $EndSCHEMATC
