@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Distributeur de boissons"
-Date "2021-11-03"
+Date "2021-11-04"
 Rev "1.0"
 Comp ""
 Comment1 "Schematics under MIT License"
