@@ -1032,4 +1032,14 @@ Wire Wire Line
 Connection ~ 2140 2440
 Wire Wire Line
 	2140 2440 2550 2440
+NoConn ~ 5735 4685
+NoConn ~ 5735 4785
+NoConn ~ 5735 4885
+NoConn ~ 5135 4685
+NoConn ~ 5135 4785
+NoConn ~ 5135 4885
+NoConn ~ 7260 5615
+NoConn ~ 7260 5715
+NoConn ~ 7260 5815
+NoConn ~ 7860 5715
 $EndSCHEMATC
