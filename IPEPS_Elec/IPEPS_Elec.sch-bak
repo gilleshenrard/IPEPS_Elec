@@ -636,11 +636,11 @@ Wire Wire Line
 Wire Wire Line
 	5085 2700 5085 2665
 Text GLabel 5765 2800 2    50   Input ~ 0
-C+T
+C.T
 Wire Wire Line
 	5730 2800 5765 2800
 Text GLabel 5075 4585 0    50   Input ~ 0
-C+T
+C.T
 Wire Wire Line
 	5075 4585 5135 4585
 Wire Wire Line
