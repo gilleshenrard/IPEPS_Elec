@@ -519,7 +519,7 @@ Wire Wire Line
 Wire Wire Line
 	4750 3685 5320 3685
 Wire Wire Line
-	4280 1860 4750 1860
+	4280 1860 4480 1860
 Wire Wire Line
 	4750 1860 4750 3685
 Wire Wire Line
@@ -642,12 +642,12 @@ Wire Wire Line
 $Comp
 L power:VCC #PWR?
 U 1 1 61A07F28
-P 9040 1180
-F 0 "#PWR?" H 9040 1030 50  0001 C CNN
-F 1 "VCC" H 9055 1353 50  0000 C CNN
-F 2 "" H 9040 1180 50  0001 C CNN
-F 3 "" H 9040 1180 50  0001 C CNN
-	1    9040 1180
+P 9040 980
+F 0 "#PWR?" H 9040 830 50  0001 C CNN
+F 1 "VCC" H 9055 1153 50  0000 C CNN
+F 2 "" H 9040 980 50  0001 C CNN
+F 3 "" H 9040 980 50  0001 C CNN
+	1    9040 980 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -663,4 +663,32 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS11" H 8330 1415 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9125 1415 8630 1415
+Text GLabel 4480 1790 1    50   Input ~ 0
+I1
+Wire Wire Line
+	4480 1790 4480 1860
+Connection ~ 4480 1860
+Wire Wire Line
+	4480 1860 4750 1860
+Text GLabel 7980 1515 0    50   Input ~ 0
+I1
+Wire Wire Line
+	8030 1515 7980 1515
+Wire Wire Line
+	6460 1860 7310 1860
+Wire Wire Line
+	7310 1860 7310 1415
+Wire Wire Line
+	7310 1415 8030 1415
+$Comp
+L Device:R_Small R?
+U 1 1 61A2A7B2
+P 9040 1080
+F 0 "R?" H 9099 1126 50  0000 L CNN
+F 1 "100k" H 9099 1035 50  0000 L CNN
+F 2 "" H 9040 1080 50  0001 C CNN
+F 3 "~" H 9040 1080 50  0001 C CNN
+	1    9040 1080
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
