@@ -655,9 +655,9 @@ L 74xx:74LS11 U?
 U 1 1 61A0CAE6
 P 8335 1860
 F 0 "U?" H 8335 2185 50  0000 C CNN
-F 1 "74LS11" H 8335 2094 50  0000 C CNN
+F 1 "SN74HC11N" H 8335 2094 50  0000 C CNN
 F 2 "" H 8335 1860 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS11" H 8335 1860 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/scls084d/scls084d.pdf" H 8335 1860 50  0001 C CNN
 	1    8335 1860
 	1    0    0    -1  
 $EndComp
