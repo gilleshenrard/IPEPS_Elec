@@ -26,24 +26,13 @@ F 3 "http://www.ti.com/lit/ds/symlink/ne556.pdf" H 6650 1940 50  0001 C CNN
 $EndComp
 $Comp
 L Timer:NE556 U?
-U 2 1 61901A02
+U 1 1 61901A02
 P 9490 2050
 F 0 "U?" H 9205 2400 50  0000 C CNN
 F 1 "NE556" H 9740 1700 50  0000 C CNN
 F 2 "" H 9490 2050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ne556.pdf" H 9490 2050 50  0001 C CNN
-	2    9490 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Timer:NE556 U?
-U 1 1 61902907
-P 4000 2665
-F 0 "U?" H 4000 3246 50  0000 C CNN
-F 1 "NE556" H 4000 3155 50  0000 C CNN
-F 2 "" H 4000 2665 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne556.pdf" H 4000 2665 50  0001 C CNN
-	1    4000 2665
+	1    9490 2050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -59,13 +48,13 @@ F 3 "http://www.ti.com/lit/ds/symlink/ne556.pdf" H 6015 5425 50  0001 C CNN
 $EndComp
 $Comp
 L Timer:NE556 U?
-U 1 1 61904F77
+U 2 1 61904F77
 P 3150 5230
 F 0 "U?" H 3150 5811 50  0000 C CNN
 F 1 "NE556" H 3150 5720 50  0000 C CNN
 F 2 "" H 3150 5230 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ne556.pdf" H 3150 5230 50  0001 C CNN
-	1    3150 5230
+	2    3150 5230
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -141,16 +130,16 @@ $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 619333C3
-P 4000 2070
-F 0 "#PWR?" H 4000 1920 50  0001 C CNN
-F 1 "VCC" H 4015 2243 50  0000 C CNN
-F 2 "" H 4000 2070 50  0001 C CNN
-F 3 "" H 4000 2070 50  0001 C CNN
-	1    4000 2070
+P 14215 5745
+F 0 "#PWR?" H 14215 5595 50  0001 C CNN
+F 1 "VCC" H 14230 5918 50  0000 C CNN
+F 2 "" H 14215 5745 50  0001 C CNN
+F 3 "" H 14215 5745 50  0001 C CNN
+	1    14215 5745
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4000 2265 4000 2070
+	14215 5940 14215 5745
 $Comp
 L power:VCC #PWR?
 U 1 1 61936BE9
@@ -167,12 +156,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 6193A4A7
-P 4000 3065
-F 0 "#PWR?" H 4000 2815 50  0001 C CNN
-F 1 "GND" H 4005 2892 50  0000 C CNN
-F 2 "" H 4000 3065 50  0001 C CNN
-F 3 "" H 4000 3065 50  0001 C CNN
-	1    4000 3065
+P 14215 6740
+F 0 "#PWR?" H 14215 6490 50  0001 C CNN
+F 1 "GND" H 14220 6567 50  0000 C CNN
+F 2 "" H 14215 6740 50  0001 C CNN
+F 3 "" H 14215 6740 50  0001 C CNN
+	1    14215 6740
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -265,79 +254,49 @@ Wire Wire Line
 NoConn ~ 7150 1940
 NoConn ~ 7150 2140
 $Comp
-L Device:C_Small C?
-U 1 1 6195DA33
-P 3490 3020
-F 0 "C?" H 3345 3105 50  0000 L CNN
-F 1 "100pF" H 3220 2935 50  0000 L CNN
-F 2 "" H 3490 3020 50  0001 C CNN
-F 3 "~" H 3490 3020 50  0001 C CNN
-	1    3490 3020
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6195DC61
-P 3490 3120
-F 0 "#PWR?" H 3490 2870 50  0001 C CNN
-F 1 "GND" H 3495 2947 50  0000 C CNN
-F 2 "" H 3490 3120 50  0001 C CNN
-F 3 "" H 3490 3120 50  0001 C CNN
-	1    3490 3120
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R?
 U 1 1 6195DC6B
-P 3365 2140
-F 0 "R?" H 3424 2186 50  0000 L CNN
-F 1 "100k" H 3424 2095 50  0000 L CNN
-F 2 "" H 3365 2140 50  0001 C CNN
-F 3 "~" H 3365 2140 50  0001 C CNN
-	1    3365 2140
+P 13710 5865
+F 0 "R?" H 13769 5911 50  0000 L CNN
+F 1 "100k" H 13769 5820 50  0000 L CNN
+F 2 "" H 13710 5865 50  0001 C CNN
+F 3 "~" H 13710 5865 50  0001 C CNN
+	1    13710 5865
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 6195DC75
-P 3250 2140
-F 0 "R?" H 3095 2205 50  0000 L CNN
-F 1 "100k" H 3020 2115 50  0000 L CNN
-F 2 "" H 3250 2140 50  0001 C CNN
-F 3 "~" H 3250 2140 50  0001 C CNN
-	1    3250 2140
+P 13595 5865
+F 0 "R?" H 13440 5930 50  0000 L CNN
+F 1 "100k" H 13365 5840 50  0000 L CNN
+F 2 "" H 13595 5865 50  0001 C CNN
+F 3 "~" H 13595 5865 50  0001 C CNN
+	1    13595 5865
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 6195DC7F
-P 3310 1990
-F 0 "#PWR?" H 3310 1840 50  0001 C CNN
-F 1 "VCC" H 3325 2163 50  0000 C CNN
-F 2 "" H 3310 1990 50  0001 C CNN
-F 3 "" H 3310 1990 50  0001 C CNN
-	1    3310 1990
+P 13655 5715
+F 0 "#PWR?" H 13655 5565 50  0001 C CNN
+F 1 "VCC" H 13670 5888 50  0000 C CNN
+F 2 "" H 13655 5715 50  0001 C CNN
+F 3 "" H 13655 5715 50  0001 C CNN
+	1    13655 5715
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3310 1990 3310 2040
+	13655 5715 13655 5765
 Wire Wire Line
-	3310 2040 3250 2040
+	13655 5765 13595 5765
 Wire Wire Line
-	3310 2040 3365 2040
-Connection ~ 3310 2040
+	13655 5765 13710 5765
+Connection ~ 13655 5765
 Wire Wire Line
-	3365 2240 3365 2465
+	13710 5965 13710 6190
 Wire Wire Line
-	3365 2465 3500 2465
-Wire Wire Line
-	3250 2240 3250 2865
-Wire Wire Line
-	3250 2865 3500 2865
-Wire Wire Line
-	3500 2665 3490 2665
-Wire Wire Line
-	3490 2665 3490 2920
+	13715 6490 13715 6745
 $Comp
 L Device:C_Small C?
 U 1 1 6196B142
@@ -410,8 +369,8 @@ Wire Wire Line
 	8740 2250 8990 2250
 Wire Wire Line
 	8980 2305 8980 2050
-NoConn ~ 4500 2665
-NoConn ~ 4500 2865
+NoConn ~ 14715 6290
+NoConn ~ 13715 6290
 NoConn ~ 9990 2050
 NoConn ~ 9990 2250
 $Comp
@@ -449,8 +408,6 @@ F 3 "~" H 1020 1900 50  0001 C CNN
 	1    1020 1700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3095 2465 3365 2465
 $Comp
 L power:GND #PWR?
 U 1 1 619851A7
@@ -464,45 +421,43 @@ F 3 "" H 820 1760 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	820  1700 820  1760
-Connection ~ 3365 2465
 $Comp
 L Transistor_BJT:BC547 Q?
 U 1 1 619B555D
-P 4900 2465
-F 0 "Q?" H 5091 2511 50  0000 L CNN
-F 1 "BC547" H 5091 2420 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5100 2390 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 4900 2465 50  0001 L CNN
-	1    4900 2465
+P 15230 6390
+F 0 "Q?" H 15421 6436 50  0000 L CNN
+F 1 "BC547" H 15421 6345 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 15430 6315 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 15230 6390 50  0001 L CNN
+	1    15230 6390
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 619B7EAA
-P 4600 2465
-F 0 "R?" V 4404 2465 50  0000 C CNN
-F 1 "47k" V 4495 2465 50  0000 C CNN
-F 2 "" H 4600 2465 50  0001 C CNN
-F 3 "~" H 4600 2465 50  0001 C CNN
-	1    4600 2465
+P 14930 6390
+F 0 "R?" V 14734 6390 50  0000 C CNN
+F 1 "47k" V 14825 6390 50  0000 C CNN
+F 2 "" H 14930 6390 50  0001 C CNN
+F 3 "~" H 14930 6390 50  0001 C CNN
+	1    14930 6390
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 619BA743
-P 5000 2665
-F 0 "#PWR?" H 5000 2415 50  0001 C CNN
-F 1 "GND" H 5005 2492 50  0000 C CNN
-F 2 "" H 5000 2665 50  0001 C CNN
-F 3 "" H 5000 2665 50  0001 C CNN
-	1    5000 2665
+P 15330 6590
+F 0 "#PWR?" H 15330 6340 50  0001 C CNN
+F 1 "GND" H 15335 6417 50  0000 C CNN
+F 2 "" H 15330 6590 50  0001 C CNN
+F 3 "" H 15330 6590 50  0001 C CNN
+	1    15330 6590
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 2265 5000 2140
+	15330 6190 15330 6065
 Wire Wire Line
-	5000 2140 5900 2140
-Connection ~ 5900 2140
+	15330 6065 16230 6065
 $Comp
 L Device:R_Small R?
 U 1 1 619EB70F
@@ -674,7 +629,7 @@ F 3 "" H 10185 2400 50  0001 C CNN
 	1    10185 2400
 	1    0    0    -1  
 $EndComp
-Text GLabel 5515 4480 0    50   Input ~ 0
+Text GLabel 6510 4405 1    50   Input ~ 0
 O3
 $Comp
 L power:GND #PWR?
@@ -778,12 +733,12 @@ $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 619A6FF4
-P 6810 4805
-F 0 "#PWR?" H 6810 4655 50  0001 C CNN
-F 1 "VCC" H 6825 4978 50  0000 C CNN
-F 2 "" H 6810 4805 50  0001 C CNN
-F 3 "" H 6810 4805 50  0001 C CNN
-	1    6810 4805
+P 6015 4680
+F 0 "#PWR?" H 6015 4530 50  0001 C CNN
+F 1 "VCC" H 6030 4853 50  0000 C CNN
+F 2 "" H 6015 4680 50  0001 C CNN
+F 3 "" H 6015 4680 50  0001 C CNN
+	1    6015 4680
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -918,55 +873,55 @@ Wire Wire Line
 $Comp
 L dk_Clock-Timing-Programmable-Timers-and-Oscillators:TLC555CP U?
 U 1 1 61B6BFB4
-P 9590 3780
-F 0 "U?" H 9590 4133 60  0000 C CNN
-F 1 "TLC555CP" H 9590 4027 60  0000 C CNN
-F 2 "digikey-footprints:DIP-8_W7.62mm" H 9790 3980 60  0001 L CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftlc555" H 9790 4080 60  0001 L CNN
-F 4 "296-1857-5-ND" H 9790 4180 60  0001 L CNN "Digi-Key_PN"
-F 5 "TLC555CP" H 9790 4280 60  0001 L CNN "MPN"
-F 6 "Integrated Circuits (ICs)" H 9790 4380 60  0001 L CNN "Category"
-F 7 "Clock/Timing - Programmable Timers and Oscillators" H 9790 4480 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftlc555" H 9790 4580 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/TLC555CP/296-1857-5-ND/277502" H 9790 4680 60  0001 L CNN "DK_Detail_Page"
-F 10 "IC OSC SINGLE TIMER 2.1MHZ 8-DIP" H 9790 4780 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 9790 4880 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 9790 4980 60  0001 L CNN "Status"
-	1    9590 3780
+P 14215 6090
+F 0 "U?" H 14215 6443 60  0000 C CNN
+F 1 "TLC555CP" H 14215 6337 60  0000 C CNN
+F 2 "digikey-footprints:DIP-8_W7.62mm" H 14415 6290 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftlc555" H 14415 6390 60  0001 L CNN
+F 4 "296-1857-5-ND" H 14415 6490 60  0001 L CNN "Digi-Key_PN"
+F 5 "TLC555CP" H 14415 6590 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 14415 6690 60  0001 L CNN "Category"
+F 7 "Clock/Timing - Programmable Timers and Oscillators" H 14415 6790 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftlc555" H 14415 6890 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/TLC555CP/296-1857-5-ND/277502" H 14415 6990 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC OSC SINGLE TIMER 2.1MHZ 8-DIP" H 14415 7090 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 14415 7190 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 14415 7290 60  0001 L CNN "Status"
+	1    14215 6090
 	1    0    0    -1  
 $EndComp
 $Comp
 L Transistor_BJT:BC547 Q?
 U 1 1 6197B7D5
-P 5915 4480
-F 0 "Q?" H 6106 4526 50  0000 L CNN
-F 1 "BC547" H 6106 4435 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6115 4405 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 5915 4480 50  0001 L CNN
-	1    5915 4480
+P 6710 4605
+F 0 "Q?" H 6901 4651 50  0000 L CNN
+F 1 "BC547" H 6901 4560 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6910 4530 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 6710 4605 50  0001 L CNN
+	1    6710 4605
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 6197D552
-P 6015 4280
-F 0 "#PWR?" H 6015 4130 50  0001 C CNN
-F 1 "VCC" H 6030 4453 50  0000 C CNN
-F 2 "" H 6015 4280 50  0001 C CNN
-F 3 "" H 6015 4280 50  0001 C CNN
-	1    6015 4280
+P 6810 4405
+F 0 "#PWR?" H 6810 4255 50  0001 C CNN
+F 1 "VCC" H 6825 4578 50  0000 C CNN
+F 2 "" H 6810 4405 50  0001 C CNN
+F 3 "" H 6810 4405 50  0001 C CNN
+	1    6810 4405
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 6199A848
-P 5615 4480
-F 0 "R?" H 5674 4526 50  0000 L CNN
-F 1 "100k" H 5674 4435 50  0000 L CNN
-F 2 "" H 5615 4480 50  0001 C CNN
-F 3 "~" H 5615 4480 50  0001 C CNN
-	1    5615 4480
-	0    1    1    0   
+P 6510 4505
+F 0 "R?" H 6569 4551 50  0000 L CNN
+F 1 "100k" H 6569 4460 50  0000 L CNN
+F 2 "" H 6510 4505 50  0001 C CNN
+F 3 "~" H 6510 4505 50  0001 C CNN
+	1    6510 4505
+	-1   0    0    1   
 $EndComp
 Text GLabel 1220 1700 2    50   Input ~ 0
 I2
@@ -994,19 +949,18 @@ F 3 "~" H 1020 2550 50  0001 C CNN
 	1    1020 2350
 	1    0    0    -1  
 $EndComp
-Text GLabel 3095 2465 0    50   Input ~ 0
+Text GLabel 13425 6390 0    50   Input ~ 0
 I2
 Text GLabel 1220 2350 2    50   Input ~ 0
 I3
-Text GLabel 3100 2865 0    50   Input ~ 0
+Text GLabel 13425 6190 0    50   Input ~ 0
 I3
 Text GLabel 5765 1740 0    50   Input ~ 0
 I1
 Text GLabel 8685 2250 0    50   Input ~ 0
 I3
 Wire Wire Line
-	3250 2865 3100 2865
-Connection ~ 3250 2865
+	12070 4070 11920 4070
 Wire Wire Line
 	8685 2250 8740 2250
 Connection ~ 8740 2250
@@ -1032,14 +986,14 @@ Wire Notes Line
 Text Notes 5780 2835 0    50   ~ 0
 M1 (bistable)
 Wire Notes Line
-	5390 3590 2850 3590
+	15685 2850 13145 2850
 Wire Notes Line
-	2850 3590 2850 1705
+	13145 2850 13145 965 
 Wire Notes Line
-	5395 3590 5395 1705
+	15690 2850 15690 965 
 Wire Notes Line
-	2850 1705 5395 1705
-Text Notes 2915 3530 0    50   ~ 0
+	13145 965  15690 965 
+Text Notes 13210 2790 0    50   ~ 0
 M3 (bistable)
 Wire Notes Line
 	5570 995  5570 2895
@@ -1081,4 +1035,42 @@ Wire Notes Line
 	4955 4015 8680 4015
 Text Notes 5025 6335 0    50   ~ 0
 Alarm (astable feeding a mosfet driver and a buzzer)
+$Comp
+L power:GND #PWR?
+U 1 1 6195DC61
+P 13715 6945
+F 0 "#PWR?" H 13715 6695 50  0001 C CNN
+F 1 "GND" H 13720 6772 50  0000 C CNN
+F 2 "" H 13715 6945 50  0001 C CNN
+F 3 "" H 13715 6945 50  0001 C CNN
+	1    13715 6945
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6195DA33
+P 13715 6845
+F 0 "C?" H 13570 6930 50  0000 L CNN
+F 1 "100pF" H 13445 6760 50  0000 L CNN
+F 2 "" H 13715 6845 50  0001 C CNN
+F 3 "~" H 13715 6845 50  0001 C CNN
+	1    13715 6845
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13425 6190 13710 6190
+Connection ~ 13710 6190
+Wire Wire Line
+	13710 6190 13715 6190
+Wire Wire Line
+	11915 3670 12320 3670
+Wire Wire Line
+	13595 5965 13595 6390
+Wire Wire Line
+	13595 6390 13715 6390
+Wire Wire Line
+	14715 6390 14830 6390
+Wire Wire Line
+	13425 6390 13595 6390
+Connection ~ 13595 6390
 $EndSCHEMATC
