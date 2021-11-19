@@ -60,12 +60,12 @@ $EndComp
 $Comp
 L Timer:NE556 U?
 U 1 1 61904F77
-P 2070 5820
-F 0 "U?" H 2070 6401 50  0000 C CNN
-F 1 "NE556" H 2070 6310 50  0000 C CNN
-F 2 "" H 2070 5820 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne556.pdf" H 2070 5820 50  0001 C CNN
-	1    2070 5820
+P 2335 5620
+F 0 "U?" H 2335 6201 50  0000 C CNN
+F 1 "NE556" H 2335 6110 50  0000 C CNN
+F 2 "" H 2335 5620 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne556.pdf" H 2335 5620 50  0001 C CNN
+	1    2335 5620
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -154,16 +154,16 @@ Wire Wire Line
 $Comp
 L power:VCC #PWR?
 U 1 1 61936BE9
-P 2070 5225
-F 0 "#PWR?" H 2070 5075 50  0001 C CNN
-F 1 "VCC" H 2085 5398 50  0000 C CNN
-F 2 "" H 2070 5225 50  0001 C CNN
-F 3 "" H 2070 5225 50  0001 C CNN
-	1    2070 5225
+P 2335 5025
+F 0 "#PWR?" H 2335 4875 50  0001 C CNN
+F 1 "VCC" H 2350 5198 50  0000 C CNN
+F 2 "" H 2335 5025 50  0001 C CNN
+F 3 "" H 2335 5025 50  0001 C CNN
+	1    2335 5025
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2070 5420 2070 5225
+	2335 5220 2335 5025
 $Comp
 L power:GND #PWR?
 U 1 1 6193A4A7
@@ -189,12 +189,12 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 6193C618
-P 2070 6365
-F 0 "#PWR?" H 2070 6115 50  0001 C CNN
-F 1 "GND" H 2075 6192 50  0000 C CNN
-F 2 "" H 2070 6365 50  0001 C CNN
-F 3 "" H 2070 6365 50  0001 C CNN
-	1    2070 6365
+P 2335 6165
+F 0 "#PWR?" H 2335 5915 50  0001 C CNN
+F 1 "GND" H 2340 5992 50  0000 C CNN
+F 2 "" H 2335 6165 50  0001 C CNN
+F 3 "" H 2335 6165 50  0001 C CNN
+	1    2335 6165
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -554,87 +554,87 @@ Wire Wire Line
 $Comp
 L Device:R_Small R?
 U 1 1 619EB70F
-P 2720 5210
-F 0 "R?" H 2779 5256 50  0000 L CNN
-F 1 "100k" H 2779 5165 50  0000 L CNN
-F 2 "" H 2720 5210 50  0001 C CNN
-F 3 "~" H 2720 5210 50  0001 C CNN
-	1    2720 5210
+P 2985 5010
+F 0 "R?" H 3044 5056 50  0000 L CNN
+F 1 "100k" H 3044 4965 50  0000 L CNN
+F 2 "" H 2985 5010 50  0001 C CNN
+F 3 "~" H 2985 5010 50  0001 C CNN
+	1    2985 5010
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 619EC41F
-P 2150 5125
-F 0 "#PWR?" H 2150 4975 50  0001 C CNN
-F 1 "VCC" H 2165 5298 50  0000 C CNN
-F 2 "" H 2150 5125 50  0001 C CNN
-F 3 "" H 2150 5125 50  0001 C CNN
-	1    2150 5125
+P 2985 4910
+F 0 "#PWR?" H 2985 4760 50  0001 C CNN
+F 1 "VCC" H 3000 5083 50  0000 C CNN
+F 2 "" H 2985 4910 50  0001 C CNN
+F 3 "" H 2985 4910 50  0001 C CNN
+	1    2985 4910
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2570 5820 2720 5820
+	2835 5620 2985 5620
 Wire Wire Line
-	2720 5310 2720 5820
+	2985 5110 2985 5620
 Wire Wire Line
-	2570 6020 2720 6020
+	2835 5820 2985 5820
 Wire Wire Line
-	2720 6020 2720 5820
-Connection ~ 2720 5820
+	2985 5820 2985 5620
+Connection ~ 2985 5620
 $Comp
 L Device:CP1_Small C?
 U 1 1 619F6519
-P 2720 6120
-F 0 "C?" H 2765 6195 50  0000 L CNN
-F 1 "47uF" H 2745 6035 50  0000 L CNN
-F 2 "" H 2720 6120 50  0001 C CNN
-F 3 "~" H 2720 6120 50  0001 C CNN
-	1    2720 6120
+P 2985 5920
+F 0 "C?" H 3030 5995 50  0000 L CNN
+F 1 "47uF" H 3010 5835 50  0000 L CNN
+F 2 "" H 2985 5920 50  0001 C CNN
+F 3 "~" H 2985 5920 50  0001 C CNN
+	1    2985 5920
 	1    0    0    -1  
 $EndComp
-Connection ~ 2720 6020
+Connection ~ 2985 5820
 $Comp
 L Device:C_Small C?
 U 1 1 619FB1EC
-P 1395 6120
-F 0 "C?" H 1250 6205 50  0000 L CNN
-F 1 "100pF" H 1125 6035 50  0000 L CNN
-F 2 "" H 1395 6120 50  0001 C CNN
-F 3 "~" H 1395 6120 50  0001 C CNN
-	1    1395 6120
+P 1660 5920
+F 0 "C?" H 1515 6005 50  0000 L CNN
+F 1 "100pF" H 1390 5835 50  0000 L CNN
+F 2 "" H 1660 5920 50  0001 C CNN
+F 3 "~" H 1660 5920 50  0001 C CNN
+	1    1660 5920
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2070 6220 2070 6300
+	2335 6020 2335 6100
 Wire Wire Line
-	2720 6220 2720 6300
+	2985 6020 2985 6100
 Wire Wire Line
-	2720 6300 2070 6300
-Connection ~ 2070 6300
+	2985 6100 2335 6100
+Connection ~ 2335 6100
 Wire Wire Line
-	2070 6300 2070 6365
+	2335 6100 2335 6165
 Wire Wire Line
-	1395 6220 1395 6300
+	1660 6020 1660 6100
 Wire Wire Line
-	1395 6300 2070 6300
+	1660 6100 2335 6100
 Wire Wire Line
-	1570 5820 1395 5820
+	1835 5620 1660 5620
 Wire Wire Line
-	1395 5820 1395 6020
+	1660 5620 1660 5820
 Wire Wire Line
-	1570 6020 1485 6020
+	1835 5820 1750 5820
 Wire Wire Line
-	1485 6020 1485 5385
+	1750 5820 1750 5185
 $Comp
 L power:VCC #PWR?
 U 1 1 61A07F28
-P 1485 5185
-F 0 "#PWR?" H 1485 5035 50  0001 C CNN
-F 1 "VCC" H 1500 5358 50  0000 C CNN
-F 2 "" H 1485 5185 50  0001 C CNN
-F 3 "" H 1485 5185 50  0001 C CNN
-	1    1485 5185
+P 1750 4985
+F 0 "#PWR?" H 1750 4835 50  0001 C CNN
+F 1 "VCC" H 1765 5158 50  0000 C CNN
+F 2 "" H 1750 4985 50  0001 C CNN
+F 3 "" H 1750 4985 50  0001 C CNN
+	1    1750 4985
 	1    0    0    -1  
 $EndComp
 Text GLabel 3300 1595 1    50   Input ~ 0
@@ -649,12 +649,12 @@ Wire Wire Line
 $Comp
 L Device:R_Small R?
 U 1 1 61A2A7B2
-P 1485 5285
-F 0 "R?" H 1544 5331 50  0000 L CNN
-F 1 "100k" H 1544 5240 50  0000 L CNN
-F 2 "" H 1485 5285 50  0001 C CNN
-F 3 "~" H 1485 5285 50  0001 C CNN
-	1    1485 5285
+P 1750 5085
+F 0 "R?" H 1809 5131 50  0000 L CNN
+F 1 "100k" H 1809 5040 50  0000 L CNN
+F 2 "" H 1750 5085 50  0001 C CNN
+F 3 "~" H 1750 5085 50  0001 C CNN
+	1    1750 5085
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -727,7 +727,7 @@ F 3 "" H 5470 4040 50  0001 C CNN
 	1    5470 4040
 	1    0    0    -1  
 $EndComp
-Text GLabel 3065 5575 1    50   Input ~ 0
+Text GLabel 3330 5375 1    50   Input ~ 0
 O3
 Wire Wire Line
 	5530 1665 5840 1665
@@ -957,13 +957,6 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4071bms-72bms
 	1    6915 1310
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2570 5620 3065 5620
-Wire Wire Line
-	3065 5575 3065 5620
-Connection ~ 3065 5620
-Wire Wire Line
-	3065 5620 3985 5620
 Text GLabel 6615 1210 0    50   Input ~ 0
 O3
 Text GLabel 6615 1310 0    50   Input ~ 0
@@ -978,8 +971,68 @@ Wire Wire Line
 Connection ~ 5530 1665
 Text GLabel 7215 1310 2    50   Input ~ 0
 Timer
-Text GLabel 1330 5620 0    50   Input ~ 0
+Text GLabel 1595 5420 0    50   Input ~ 0
 Timer
 Wire Wire Line
-	1330 5620 1570 5620
+	1595 5420 1835 5420
+$Comp
+L dk_Clock-Timing-Programmable-Timers-and-Oscillators:TLC555CP U?
+U 1 1 61B6BFB4
+P 7975 4195
+F 0 "U?" H 7975 4548 60  0000 C CNN
+F 1 "TLC555CP" H 7975 4442 60  0000 C CNN
+F 2 "digikey-footprints:DIP-8_W7.62mm" H 8175 4395 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftlc555" H 8175 4495 60  0001 L CNN
+F 4 "296-1857-5-ND" H 8175 4595 60  0001 L CNN "Digi-Key_PN"
+F 5 "TLC555CP" H 8175 4695 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 8175 4795 60  0001 L CNN "Category"
+F 7 "Clock/Timing - Programmable Timers and Oscillators" H 8175 4895 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftlc555" H 8175 4995 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/TLC555CP/296-1857-5-ND/277502" H 8175 5095 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC OSC SINGLE TIMER 2.1MHZ 8-DIP" H 8175 5195 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 8175 5295 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8175 5395 60  0001 L CNN "Status"
+	1    7975 4195
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q?
+U 1 1 6197B7D5
+P 3885 5420
+F 0 "Q?" H 4076 5466 50  0000 L CNN
+F 1 "BC547" H 4076 5375 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4085 5345 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 3885 5420 50  0001 L CNN
+	1    3885 5420
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 6197D552
+P 3985 5220
+F 0 "#PWR?" H 3985 5070 50  0001 C CNN
+F 1 "VCC" H 4000 5393 50  0000 C CNN
+F 2 "" H 3985 5220 50  0001 C CNN
+F 3 "" H 3985 5220 50  0001 C CNN
+	1    3985 5220
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2835 5420 3330 5420
+Wire Wire Line
+	3330 5375 3330 5420
+$Comp
+L Device:R_Small R?
+U 1 1 6199A848
+P 3585 5420
+F 0 "R?" H 3644 5466 50  0000 L CNN
+F 1 "100k" H 3644 5375 50  0000 L CNN
+F 2 "" H 3585 5420 50  0001 C CNN
+F 3 "~" H 3585 5420 50  0001 C CNN
+	1    3585 5420
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3485 5420 3330 5420
+Connection ~ 3330 5420
 $EndSCHEMATC
