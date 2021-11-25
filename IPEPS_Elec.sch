@@ -1073,18 +1073,14 @@ Connection ~ 5740 2400
 $Comp
 L Transistor_FET:BS250 Q?
 U 1 1 61B90AFD
-P 1425 1265
-F 0 "Q?" V 1767 1265 50  0000 C CNN
-F 1 "IRF5305" V 1676 1265 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 1625 1190 50  0001 L CIN
-F 3 "https://pdf1.alldatasheet.com/datasheet-pdf/view/68167/IRF/IRF5305.html" H 1425 1265 50  0001 L CNN
-	1    1425 1265
+P 1920 1265
+F 0 "Q?" V 2262 1265 50  0000 C CNN
+F 1 "IRF5305" V 2171 1265 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2120 1190 50  0001 L CIN
+F 3 "https://pdf1.alldatasheet.com/datasheet-pdf/view/68167/IRF/IRF5305.html" H 1920 1265 50  0001 L CNN
+	1    1920 1265
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	1020 1165 1225 1165
-Wire Wire Line
-	1020 1465 1425 1465
 $Comp
 L power:GND #PWR?
 U 1 1 61B9BBA4
@@ -1098,20 +1094,6 @@ F 3 "" H 1020 1465 50  0001 C CNN
 $EndComp
 Connection ~ 1020 1465
 $Comp
-L Regulator_Linear:LM1117-5.0 U?
-U 1 1 61B9E02F
-P 1925 1165
-F 0 "U?" H 1925 1407 50  0000 C CNN
-F 1 "LM1117-5.0" H 1925 1316 50  0000 C CNN
-F 2 "" H 1925 1165 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 1925 1165 50  0001 C CNN
-	1    1925 1165
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1925 1465 1425 1465
-Connection ~ 1425 1465
-$Comp
 L power:VCC #PWR?
 U 1 1 61BA32A4
 P 2290 1165
@@ -1122,8 +1104,6 @@ F 3 "" H 2290 1165 50  0001 C CNN
 	1    2290 1165
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2225 1165 2290 1165
 Wire Notes Line
 	2450 805  2450 1830
 Wire Notes Line
@@ -1144,4 +1124,53 @@ Wire Notes Line
 	1015 4465 1015 2095
 Text Notes 1055 4410 0    50   ~ 0
 Input switches
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 61A04CC6
+P 1295 1165
+F 0 "SW?" H 1165 1445 50  0000 C CNN
+F 1 "SW_SPDT" H 1255 1375 50  0000 C CNN
+F 2 "" H 1295 1165 50  0001 C CNN
+F 3 "~" H 1295 1165 50  0001 C CNN
+	1    1295 1165
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1020 1165 1095 1165
+Wire Wire Line
+	1495 1265 1650 1265
+Wire Wire Line
+	1650 1265 1650 1165
+Wire Wire Line
+	1495 1065 1495 995 
+Wire Wire Line
+	1495 995  1095 995 
+Wire Wire Line
+	1095 995  1095 1165
+Connection ~ 1095 1165
+Wire Wire Line
+	1650 1165 1720 1165
+Wire Wire Line
+	1020 1465 1920 1465
+$Comp
+L Device:CP1_Small C?
+U 1 1 61A1983E
+P 2170 1265
+F 0 "C?" H 2250 1265 50  0000 L CNN
+F 1 "10uF" H 2195 1180 50  0000 L CNN
+F 2 "" H 2170 1265 50  0001 C CNN
+F 3 "~" H 2170 1265 50  0001 C CNN
+	1    2170 1265
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2120 1165 2170 1165
+Connection ~ 2170 1165
+Wire Wire Line
+	2170 1165 2290 1165
+Wire Wire Line
+	1920 1465 2170 1465
+Wire Wire Line
+	2170 1465 2170 1365
+Connection ~ 1920 1465
 $EndSCHEMATC
