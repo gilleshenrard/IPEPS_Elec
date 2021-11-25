@@ -39,8 +39,8 @@ $Comp
 L Timer:NE556 U?
 U 2 1 61903C28
 P 8230 5215
-F 0 "U?" H 8230 5796 50  0000 C CNN
-F 1 "NE556" H 8230 5705 50  0000 C CNN
+F 0 "U?" H 8520 5560 50  0000 C CNN
+F 1 "NE556" H 7985 4865 50  0000 C CNN
 F 2 "" H 8230 5215 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ne556.pdf" H 8230 5215 50  0001 C CNN
 	2    8230 5215
@@ -50,8 +50,8 @@ $Comp
 L Timer:NE556 U?
 U 2 1 61904F77
 P 4490 5970
-F 0 "U?" H 4490 6551 50  0000 C CNN
-F 1 "NE556" H 4490 6460 50  0000 C CNN
+F 0 "U?" H 4770 6315 50  0000 C CNN
+F 1 "NE556" H 4735 5625 50  0000 C CNN
 F 2 "" H 4490 5970 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ne556.pdf" H 4490 5970 50  0001 C CNN
 	2    4490 5970
@@ -874,8 +874,8 @@ $Comp
 L dk_Clock-Timing-Programmable-Timers-and-Oscillators:TLC555CP U?
 U 1 1 61B6BFB4
 P 3725 2425
-F 0 "U?" H 3725 2778 60  0000 C CNN
-F 1 "TLC555CP" H 3725 2672 60  0000 C CNN
+F 0 "U?" H 4030 2475 60  0000 C CNN
+F 1 "TLC555CP" H 4080 1870 60  0000 C CNN
 F 2 "digikey-footprints:DIP-8_W7.62mm" H 3925 2625 60  0001 L CNN
 F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftlc555" H 3925 2725 60  0001 L CNN
 F 4 "296-1857-5-ND" H 3925 2825 60  0001 L CNN "Digi-Key_PN"
