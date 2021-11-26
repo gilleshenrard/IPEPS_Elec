@@ -942,12 +942,12 @@ Alarm (astable feeding a mosfet driver and a buzzer)
 $Comp
 L power:GND #PWR?
 U 1 1 6195DC61
-P 3225 3325
-F 0 "#PWR?" H 3225 3075 50  0001 C CNN
-F 1 "GND" H 3230 3152 50  0001 C CNN
-F 2 "" H 3225 3325 50  0001 C CNN
-F 3 "" H 3225 3325 50  0001 C CNN
-	1    3225 3325
+P 3725 3325
+F 0 "#PWR?" H 3725 3075 50  0001 C CNN
+F 1 "GND" H 3730 3152 50  0001 C CNN
+F 2 "" H 3725 3325 50  0001 C CNN
+F 3 "" H 3725 3325 50  0001 C CNN
+	1    3725 3325
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1247,7 +1247,6 @@ Wire Wire Line
 	3725 3325 3225 3325
 Wire Wire Line
 	3225 3280 3225 3325
-Connection ~ 3225 3325
 Wire Wire Line
 	4840 2925 4840 3325
 Wire Wire Line
