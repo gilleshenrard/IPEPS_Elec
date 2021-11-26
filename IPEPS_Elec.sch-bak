@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "2021-11-19"
+Date "2021-11-26"
 Rev ""
 Comp ""
 Comment1 ""
@@ -379,42 +379,16 @@ F 3 "~" H 1335 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 61981BE9
-P 1135 2560
-F 0 "#PWR?" H 1135 2310 50  0001 C CNN
-F 1 "GND" H 1140 2387 50  0001 C CNN
-F 2 "" H 1135 2560 50  0001 C CNN
-F 3 "" H 1135 2560 50  0001 C CNN
-	1    1135 2560
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1135 2500 1135 2560
-$Comp
 L Switch:SW_Push SW?
 U 1 1 61984ED4
-P 1335 3150
-F 0 "SW?" H 1335 3435 50  0000 C CNN
-F 1 "SW_Push" H 1335 3344 50  0000 C CNN
-F 2 "" H 1335 3350 50  0001 C CNN
-F 3 "~" H 1335 3350 50  0001 C CNN
-	1    1335 3150
+P 1335 2940
+F 0 "SW?" H 1335 3225 50  0000 C CNN
+F 1 "SW_Push" H 1335 3134 50  0000 C CNN
+F 2 "" H 1335 3140 50  0001 C CNN
+F 3 "~" H 1335 3140 50  0001 C CNN
+	1    1335 2940
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 619851A7
-P 1135 3210
-F 0 "#PWR?" H 1135 2960 50  0001 C CNN
-F 1 "GND" H 1140 3037 50  0001 C CNN
-F 2 "" H 1135 3210 50  0001 C CNN
-F 3 "" H 1135 3210 50  0001 C CNN
-	1    1135 3210
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1135 3150 1135 3210
 $Comp
 L Transistor_BJT:BC547 Q?
 U 1 1 619B555D
@@ -896,35 +870,22 @@ F 3 "~" H 8630 4300 50  0001 C CNN
 	1    8630 4300
 	-1   0    0    1   
 $EndComp
-Text GLabel 1535 3150 2    50   Input ~ 0
+Text GLabel 1535 2940 2    50   Input ~ 0
 I2
-Wire Wire Line
-	1135 3800 1135 3860
-$Comp
-L power:GND #PWR?
-U 1 1 619BF613
-P 1135 3860
-F 0 "#PWR?" H 1135 3610 50  0001 C CNN
-F 1 "GND" H 1140 3687 50  0001 C CNN
-F 2 "" H 1135 3860 50  0001 C CNN
-F 3 "" H 1135 3860 50  0001 C CNN
-	1    1135 3860
-	1    0    0    -1  
-$EndComp
 $Comp
 L Switch:SW_Push SW?
 U 1 1 619BF2DB
-P 1335 3800
-F 0 "SW?" H 1335 4085 50  0000 C CNN
-F 1 "SW_Push" H 1335 3994 50  0000 C CNN
-F 2 "" H 1335 4000 50  0001 C CNN
-F 3 "~" H 1335 4000 50  0001 C CNN
-	1    1335 3800
+P 1335 3380
+F 0 "SW?" H 1335 3665 50  0000 C CNN
+F 1 "SW_Push" H 1335 3574 50  0000 C CNN
+F 2 "" H 1335 3580 50  0001 C CNN
+F 3 "~" H 1335 3580 50  0001 C CNN
+	1    1335 3380
 	1    0    0    -1  
 $EndComp
 Text GLabel 2935 2725 0    50   Input ~ 0
 I2
-Text GLabel 1535 3800 2    50   Input ~ 0
+Text GLabel 1535 3380 2    50   Input ~ 0
 I3
 Text GLabel 2935 2525 0    50   Input ~ 0
 I3
@@ -1083,13 +1044,7 @@ Text Notes 865  1800 0    50   ~ 0
 9V Power protection and regulation
 Wire Notes Line
 	1015 2095 1860 2095
-Wire Notes Line
-	1860 2095 1860 4465
-Wire Notes Line
-	1860 4465 1015 4465
-Wire Notes Line
-	1015 4465 1015 2095
-Text Notes 1055 4410 0    50   ~ 0
+Text Notes 1090 3705 0    50   ~ 0
 Input switches
 $Comp
 L Switch:SW_SPDT SW?
@@ -1283,4 +1238,29 @@ Wire Wire Line
 Wire Wire Line
 	6490 1485 6490 1800
 Connection ~ 6490 1485
+Wire Wire Line
+	1135 2500 1135 2940
+Wire Wire Line
+	1135 2940 1135 3380
+Connection ~ 1135 2940
+$Comp
+L power:GND #PWR?
+U 1 1 61A58828
+P 1135 3450
+F 0 "#PWR?" H 1135 3200 50  0001 C CNN
+F 1 "GND" H 1140 3277 50  0001 C CNN
+F 2 "" H 1135 3450 50  0001 C CNN
+F 3 "" H 1135 3450 50  0001 C CNN
+	1    1135 3450
+	1    0    0    -1  
+$EndComp
+Connection ~ 1135 3380
+Wire Wire Line
+	1135 3380 1135 3450
+Wire Notes Line
+	1865 2095 1865 3735
+Wire Notes Line
+	1865 3735 1015 3735
+Wire Notes Line
+	1015 2095 1015 3735
 $EndSCHEMATC
