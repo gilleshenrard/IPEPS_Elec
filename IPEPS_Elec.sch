@@ -534,17 +534,6 @@ $EndComp
 Text GLabel 8630 4200 1    50   Input ~ 0
 O3
 $Comp
-L power:GND #PWR?
-U 1 1 61A52278
-P 2875 6325
-F 0 "#PWR?" H 2875 6075 50  0001 C CNN
-F 1 "GND" H 2875 6185 50  0001 C CNN
-F 2 "" H 2875 6325 50  0001 C CNN
-F 3 "" H 2875 6325 50  0001 C CNN
-	1    2875 6325
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VCC #PWR?
 U 1 1 61A4F3E4
 P 2875 5660
@@ -1230,4 +1219,9 @@ Wire Wire Line
 Connection ~ 9615 2575
 Wire Wire Line
 	9615 2575 10310 2575
+Wire Wire Line
+	2875 6325 2875 6450
+Wire Wire Line
+	2875 6450 3815 6450
+Connection ~ 3815 6450
 $EndSCHEMATC
