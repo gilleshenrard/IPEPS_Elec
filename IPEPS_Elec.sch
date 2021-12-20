@@ -196,4 +196,116 @@ F 3 "" H 4975 3565 50  0001 C CNN
 	1    4975 3565
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:AudioJack2_Ground J?
+U 1 1 61C3D6E2
+P 4180 3380
+F 0 "J?" H 4212 3705 50  0000 C CNN
+F 1 "jack 1.5mm" H 4212 3614 50  0000 C CNN
+F 2 "" H 4180 3380 50  0001 C CNN
+F 3 "~" H 4180 3380 50  0001 C CNN
+	1    4180 3380
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61C3E82C
+P 4575 3280
+F 0 "R?" H 4620 3320 50  0000 L CNN
+F 1 "1k" H 4625 3245 50  0000 L CNN
+F 2 "" H 4575 3280 50  0001 C CNN
+F 3 "~" H 4575 3280 50  0001 C CNN
+	1    4575 3280
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61C3EFDA
+P 4575 3380
+F 0 "R?" H 4440 3420 50  0000 L CNN
+F 1 "1k" H 4435 3345 50  0000 L CNN
+F 2 "" H 4575 3380 50  0001 C CNN
+F 3 "~" H 4575 3380 50  0001 C CNN
+	1    4575 3380
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4380 3280 4475 3280
+Wire Wire Line
+	4380 3380 4475 3380
+Wire Wire Line
+	4675 3280 4675 3330
+Connection ~ 4675 3330
+Wire Wire Line
+	4675 3330 4675 3380
+Wire Wire Line
+	4975 3330 4975 3365
+Wire Wire Line
+	4675 3330 4975 3330
+$Comp
+L power:GND #PWR?
+U 1 1 61C435A9
+P 4180 3580
+F 0 "#PWR?" H 4180 3330 50  0001 C CNN
+F 1 "GND" H 4185 3407 50  0001 C CNN
+F 2 "" H 4180 3580 50  0001 C CNN
+F 3 "" H 4180 3580 50  0001 C CNN
+	1    4180 3580
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J?
+U 1 1 61C44262
+P 7315 3615
+F 0 "J?" H 7347 3940 50  0000 C CNN
+F 1 "jack 1.5mm" H 7347 3849 50  0000 C CNN
+F 2 "" H 7315 3615 50  0001 C CNN
+F 3 "~" H 7315 3615 50  0001 C CNN
+	1    7315 3615
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61C443B6
+P 6920 3515
+F 0 "R?" H 6965 3555 50  0000 L CNN
+F 1 "1k" H 6970 3480 50  0000 L CNN
+F 2 "" H 6920 3515 50  0001 C CNN
+F 3 "~" H 6920 3515 50  0001 C CNN
+	1    6920 3515
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61C443C0
+P 6920 3615
+F 0 "R?" H 6785 3655 50  0000 L CNN
+F 1 "1k" H 6780 3580 50  0000 L CNN
+F 2 "" H 6920 3615 50  0001 C CNN
+F 3 "~" H 6920 3615 50  0001 C CNN
+	1    6920 3615
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7115 3515 7020 3515
+Wire Wire Line
+	7115 3615 7020 3615
+$Comp
+L power:GND #PWR?
+U 1 1 61C443D0
+P 7315 3815
+F 0 "#PWR?" H 7315 3565 50  0001 C CNN
+F 1 "GND" H 7320 3642 50  0001 C CNN
+F 2 "" H 7315 3815 50  0001 C CNN
+F 3 "" H 7315 3815 50  0001 C CNN
+	1    7315 3815
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6820 3515 6820 3565
+Wire Wire Line
+	6820 3565 6735 3565
+Connection ~ 6820 3565
+Wire Wire Line
+	6820 3565 6820 3615
 $EndSCHEMATC
